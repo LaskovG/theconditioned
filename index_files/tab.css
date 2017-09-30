@@ -1,0 +1,28 @@
+div.top_tabs {position: relative; width: 100%; float: left; clear: both;}
+
+div.top_tabs .indent {padding: 0 0}
+div.top_tabs .b_bott {width: 100%; background: url('/images/tab/v_l.gif') repeat-x bottom; float: left; clear: both; margin: 0; padding: 0}
+
+div.top_tabs .button {position: relative; float: left; background: #dedede url('/images/tab/v_l.gif') repeat-y right top;}
+div.top_tabs div.l {float: left; background: url('/images/tab/l_c.gif') no-repeat top left; margin: 0; padding: 0}
+div.top_tabs div.r {float: left; background: url('/images/tab/r_c.gif') no-repeat top right; margin: 0; padding: 0}
+
+div.top_tabs .button_kp {position: relative; float: left; background: #f60 url('/images/tab/v_l.gif') repeat-y right top;}
+div.top_tabs div.l_kp {float: left; background: url('/images/tab/l_c3.gif') no-repeat top left; margin: 0; padding: 0}
+div.top_tabs div.r_kp {float: left; background: url('/images/tab/r_c3.gif') no-repeat top right; margin: 0; padding: 0}
+
+div.top_tabs .b_bott .indent {padding: 9px 15px 8px 15px; font-family: verdana; font-size: 11px; font-weight: bold}
+
+div.top_tabs .select {background: #f2f2f2 url('/images/tab/v_l.gif') repeat-y right top; position: relative;}
+div.top_tabs .select .indent {font-weight: bold; color:#f60; padding: 9px 15px 9px 15px}
+div.top_tabs .select div.l {float: left; background: url('/images/tab/w_l_c.gif') no-repeat top left;}
+div.top_tabs .select div.r {background: url('/images/tab/w_r_c.gif') no-repeat top right;}
+
+div.top_tabs .select2 {background: #fff url('/images/tab/v_l.gif') repeat-y right top; position: relative;}
+div.top_tabs .select2 .indent {font-weight: bold; color:#f60; padding: 9px 15px 9px 15px}
+div.top_tabs .select2 div.l {float: left; background: url('/images/tab/w_l_c2.gif') no-repeat top left;}
+div.top_tabs .select2 div.r {background: url('/images/tab/w_r_c2.gif') no-repeat top right;}
+
+div.top_tabs .hidden {background: #ccc; height:25px; width:1px; top:5px}
+#add_friend_alert span {display: none}
+#add_friend_alert.profile_e .profile_e {display: inline; color: #880;}

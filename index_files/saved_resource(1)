@@ -1,0 +1,6 @@
+#top {height: 297px}
+#top .png_block {top: 210px}
+#top_form, #external_header_wrapper {top: 210px}
+#top .menu {top: 210px}
+#top .brand {width: 850px; height: 210px; display: block}
+#top .branding_flash {width: 850px; height: 210px; position: absolute; top: 0; left: 0}

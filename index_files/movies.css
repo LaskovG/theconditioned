@@ -1,0 +1,1601 @@
+@charset "windows-1251";.movie{background:#f2f2f2;position:relative}
+.show_all{color:#f60;text-align:right;margin-top:22px}
+.show_all a{color:#f60;text-decoration:underline}
+span.sep{height:1px;overflow:hidden;display:block;clear:right;margin-top:-5px}
+.info,.info *{border-collapse:collapse;margin:0;padding:0}
+.info tr{border-bottom:1px #999 dotted}
+.info td{width:301px;min-height:14px;vertical-align:top;padding:6px 0 6px 20px;color:#555}
+.info .type{background:url(/images/sqr-grey.gif) 11px 11px no-repeat;width:119px;color:#f60;padding-left:23px}
+.info a{color:#005;text-decoration:underline}
+.info a:hover{color:#f60}
+.info img{border:0}
+.info img.mpaa{border:0;display:block;margin:2px 5px 0 0}
+.info .dollar,.info .euro,.info .pound,.info .yen{color:#555}
+.info .dollar,.info .calendar,.info .euro,.info .pound,.info .yen{padding-left:20px}
+.info .dollar{background:url(/images/movies/currency.png) 0 -64px no-repeat}
+.info .calendar{background:url("/images/icons/dollars.gif") no-repeat scroll 0 -21px transparent;padding-left:20px;}
+.info .calendar .prem_ical{display:none;position:absolute;left:-20px;}
+.info .calendar_red{background:url('/images/icons/calendar_sprite.png') no-repeat scroll 0 -51px transparent!important;}
+.info .calendar_red .prem_ical{width:15px;height:13px;float:left;margin-right:5px;cursor:pointer;}
+.info .calendar_red .prem_ical{display:block}
+.info .calendar a{white-space: nowrap;}
+.rssplus_film{background:url(/images/movies/movies_icons.png) -1px -395px no-repeat;width:15px;height:16px;display:block;margin-right:5px}
+.comm-new{background:url(/images/movies/movies_icons.png) -1px -416px no-repeat;width:48px;height:36px;display:block;margin-right:5px}
+.comm-forum{background:url(/images/movies/movies_icons.png) -1px -460px no-repeat;width:43px;height:40px;display:block}
+.comm-poll{background:url(/images/movies/movies_icons.png) -1px -510px no-repeat;width:45px;height:45px;display:block}
+.info .rubimpot td.dollar,.info .rubimpot td.euro,.info .rubimpot td.pound,.info .rubimpot td.yen{background:url(/images/movies/currency.png) 1px 6px no-repeat !important}
+.info .euro{background:url(/images/movies/currency.png) 0 -40px no-repeat}
+.info .pound{background:url(/images/movies/currency.png) -1px -88px no-repeat}
+.info .yen{background:url(/images/movies/currency.png) 0 -17px no-repeat}
+.info .dvd,.info .bluray,.info .time{background:url(/images/movies/movies_icons.png) no-repeat;padding-left:20px}
+.info .dvd{background-position:0 5px}
+.info .bluray{background-position:0 -36px}
+.info .time{background-position:0 -75px;color:#555}
+.info .rate_r img,.info .rate_g img,.info .rate_pg img,.info .rate_pg13 img,.info .rate_nc17 img{margin-top:2px}
+.movie_dot,.movie_dot2{color:#999;padding:0 3px !important}
+.await_rate{width:400px;min-height:50px;cursor:default;position:relative;margin-left:20px}
+.await_rate *{font-family:tahoma,verdana,"trebuchet ms";display:block}
+.await_rate p{margin:0}
+.await_rate a{color:#f60;text-decoration:underline}
+.await_rate p.bar{width:220px;color:#333;font-size:10px;float:left}
+.await_rate p.bar span{color:#333;font-size:11px;font-weight:bold}
+.await_rate p.bar b,.await_rate p.bar i{background:url(/images/bg_bar.gif)}
+.await_rate p.bar b{background-position:0 -50px;width:220px;height:12px;overflow:hidden;margin:6px 0 5px 0}
+.await_rate p.bar i{background-position:0 -38px;height:19px;padding:0 !important}
+.await_rate p.perc{font-size:14px;float:left;margin-top:-16px;padding:13px 0 0 40px}
+.await_rate p.perc *{display:inline !important}
+.await_rate p.perc span{color:#f60}
+.await_rate p.perc #await_percent{font-size:25px;padding-right:3px}
+.await_rate p.perc font{color:#f60}
+.await_rate p.perc b{color:#999;font-size:14px;float:none}
+.await_rate p.perc i{color:#999;font-size:11px;font-style:normal;display:block !important}
+.await_rate p.perc_notop{margin-top:-5px}
+.await_rate strike{height:1px;overflow:hidden;clear:both;margin-top:-5px}
+.ratingCount{font-size:14px}
+.await_hands{width:140px;height:31px;color:#777;font-size:11px;position:absolute;top:4px;left:415px}
+.await_hands b,.await_hands a.yes,.await_hands a.no{background:url(/images/rating_hands_new.gif) no-repeat;width:23px;height:13px;font-weight:bold;color:#777;text-decoration:none;display:none;padding:9px 0 9px 41px}
+.await_hands b,.await_hands a:hover{color:#ff8f00;cursor:pointer}
+.await_hands .yes{float:left}
+.await_hands .no{float:right}
+.await_hands a.yes{background-position:3px 0}
+.await_hands a.no{background-position:0 -30px}
+.await_hands a.yes:hover{background-position:3px -62px}
+.await_hands a.no:hover{background-position:0 -92px}
+.await_hands b.yes{background-position:0 -124px}
+.await_hands b.no{background-position:0 -155px}
+.await_hands i{background:url(/images/ajax_star_or.gif) no-repeat;width:16px;height:16px;overflow:hidden;display:none;position:absolute;top:9px;left:-33px}
+.await_hands .descr{width:140px;font-family:arial;text-align:center;position:absolute;top:0;left:0;margin-top:30px;padding-top:7px;cursor:pointer}
+.await_hands .descr a{color:#777;text-decoration:underline}
+p.critic_rate{cursor:default;position:relative;margin:0;padding:0}
+p.critic_rate *{font-family:tahoma,verdana,"trebuchet ms";font-size:11px;font-weight:bold}
+#hide_critic_rate_title{color:#333;margin-bottom:4px}
+#show_critic_rate{display:none}
+#show_critic_rate a{color:#333;text-decoration:underline}
+#show_critic_rate i{font-style:normal;padding-left:5px}
+p.critic_rate .action{background:url(/images/movies/pls_mns.png);width:11px;height:11px;overflow:hidden;display:block;position:absolute;top:1px;left:-15px}
+p.critic_rate .block_blog .pls{background-position:0 -12px}
+@media only screen and (max-device-width:480px){p.critic_rate *{font-size:12px}
+}
+div.critic_rate{cursor:default;padding:10px 0 0 20px}
+div.critic_rate *{font-family:tahoma,verdana}
+div.critic_rate p{margin:0}
+div.critic_rate p.bar{width:220px;color:#999;font-size:10px;float:left}
+div.critic_rate p.bar b,div.critic_rate p.bar i{background:url(/images/bg_bar.gif);display:block}
+div.critic_rate p.bar b{background-position:0 -50px;width:220px;height:12px;overflow:hidden;margin:6px 0 4px 0}
+div.critic_rate p.bar i{background-position:0 -38px;height:19px}
+div.critic_rate p.perc{color:#f60;font-size:14px;float:left;margin-top:-16px;padding-left:40px}
+div.critic_rate p.perc span.perc{font-size:25px;padding-right:3px}
+div.critic_rate p.perc a{color:#f60;text-decoration:underline;font-size:21px}
+div.critic_rate p.perc b{color:#999;font-size:14px;font-style:normal}
+div.critic_rate p.perc i{color:#999;font-size:11px;font-style:normal;display:block}
+div.critic_rate p.perc i span{background:url(/images/plus_minus.gif) no-repeat;float:left;display:block;padding-right:12px;margin-right:10px}
+div.critic_rate p.perc i span.plus{background-position:100% 3px}
+div.critic_rate p.perc i span.minus{background-position:100% -42px}
+div.critic_rate p.perc i span.star{background-position:100% -89px}
+div.critic_rate p.about{background:url(/images/help-vote2.jpg) no-repeat;width:131px;text-align:right;float:right;margin-top:14px;padding-bottom:2px}
+div.critic_rate p.about a{color:#999;font-size:11px;text-decoration:underline}
+div.critic_rate strike{height:1px;overflow:hidden;clear:both;display:block}
+.movie_openers{background:url(/images/movies/pls_mns.png) 0 -14px no-repeat;color:#333;font-size:11px;font-weight:bold;text-decoration:underline;margin-left:5px;padding-left:15px}
+.movie_openers2{background:url(/images/movies/pls_mns.png) 0 -16px no-repeat;width:11px;height:11px;overflow:hidden;display:block;position:absolute;top:2px;left:-15px;margin-left:5px;padding-left:15px}
+.movie_closers{background:url(/images/movies/pls_mns.png);width:11px;height:11px;overflow:hidden;display:block;position:absolute;top:2px;left:-15px}
+#div_recommend{background:#a0a0a0;width:600px;display:none;position:absolute;top:0;left:50%;z-index:1150;margin:-100px 0 0 -755px}
+#div_recommend #ajax_star{display:none}
+#div_recommend .btnClose{width:100px;color:#333;font-family:tahoma,verdana,"trebuchet ms";font-size:13px;cursor:pointer;margin:0;padding-top:2px;padding-bottom:3px}
+.highlightrow{background-color:#ccc;cursor:pointer}
+.add_my{background:url(/images/movies/bg_add.gif) repeat-y;width:130px;min-height:56px;font-size:11px;position:relative;margin-bottom:20px}
+.add_my *{font-family:tahoma,verdana,"trebuchet ms";display:block;position:absolute;margin:0;padding:0}
+.add_my i{background:url(/images/movies/info.gif);width:14px;height:14px;cursor:pointer;overflow:hidden;top:2px;left:114px}
+.add_my u{background:url(/images/movies/add_remove.png);width:35px;height:35px;overflow:hidden;top:10px;left:-17px}
+.add_my span{color:#555;text-indent:2px;top:10px;left:21px}
+.add_my select{width:97px;color:#005;font-size:11px;cursor:pointer;top:26px;left:21px;padding:1px 0}
+.add_my select option{position:static}
+.add_my a{color:#777;font-size:10px;text-decoration:underline;bottom:-12px;right:0}
+.add_my .empty{color:#555;font-size:11px;font-weight:bold;top:24px;left:23px;bottom:auto !important;right:auto !important}
+.add_my_img div{background:url(/images/movies/go.gif) 50% 50% no-repeat;width:35px;height:35px;overflow:hidden;margin:16px 0 0 50px}
+.remove_my{background:#e3e3e3 url(/images/movies/bg_off.gif) repeat-y;padding-bottom:10px}
+.remove_my u{background-position:-38px 0}
+.remove_my .folders{overflow:hidden;padding:56px 0 0 21px}
+.remove_my .folders,.remove_my .folders *{position:static}
+.remove_my .folders b{background:url(/images/profile/movies_folder_off.gif) no-repeat;font-weight:normal;margin-bottom:3px;padding:1px 0 0 16px}
+.remove_my .folders b a{color:#666;font-size:11px}
+.add_my .folders{padding-left:15px}
+.add_my .folders b{background:0;width:95px;overflow:hidden;margin-bottom:4px;padding:0 0 0 20px}
+.add_my .folders a{display:inline}
+.add_my .folders s{background:url(/images/icons/film_remove.gif);width:15px;height:13px;cursor:pointer;display:block;position:absolute;margin:1px 0 0 -20px}
+.add_my .folders s:hover{background-position:0 -40px}
+.btnAddRecom,.btnDelRecom{color:#f60;font-family:tahoma,verdana,"trebuchet ms";font-size:11px;cursor:pointer;margin:0;padding-top:1px;padding-bottom:2px}
+.calendar .threeD{background:url(/images/movies/glasses_3d.gif) 0 3px no-repeat;font-size:11px;white-space:nowrap;padding-left:20px}
+.calendar .threeD a{color:#777;text-decoration:underline}
+.calendar .threeD_imax{width:13px;text-align:right;position:relative;padding-right:24px}
+.calendar .threeD_imax img{position:absolute;top:6px;right:0}
+@-moz-document url-prefix(){.calendar .threeD_imax img{right:3px !important}
+}
+.calendar .imaxOnly{width:23px;height:4px;display:inline-block;position:relative}
+.calendar .imaxOnly img{position:absolute;top:-1px;left:0}
+#div_rus_prem_td2,#div_rus_rerelease_prem_td2{line-height:16px;padding-top:4px;padding-bottom:4px}
+#div_rus_prem_td2 .popup_help_icon,#div_rus_rerelease_prem_td2 .popup_help_icon{margin-top:4px}
+@-moz-document url-prefix(){#div_rus_prem_td2 .popup_help_icon,#div_rus_rerelease_prem_td2 .popup_help_icon{margin-top:5px !important}
+}
+.popupNewrel{background:url("/images/spacer.gif") repeat scroll 0 0 transparent;border-collapse:collapse;height:100%;display:none;left:0;position:fixed;top:40%;width:100%;z-index:1150 !important}
+.popupNewrel .block{background:url("/images/popupNewBottom.gif") repeat-x scroll 0 100% #fff;box-shadow:0 5px 50px #333;margin:0 auto;min-height:1px;padding:18px 27px 27px;position:relative;width:326px}
+.popupNewrel .title{font-size:15px;font-weight:bold;margin:5px 0 13px}
+.popupNewrel .close{background:url("/images/close45.gif") repeat scroll 0 0 transparent;cursor:pointer;height:14px;position:absolute;right:24px;top:21px;width:14px}
+.popupNewrel .text{padding-right:10px}
+.popupNewrel .block .option_box{margin:10px 0 0 -5px}
+.popupNewrel label{margin:0 0 10px 0;font-size:12px;color:#333;display:block}
+.popupNewrel .block .option_box input{vertical-align:top}
+.add_ical_button{position:relative;width:350px}
+.add_ical_button input{width:310px;color:#333;font-size:12px}
+.add_ical_button i{display:block;position:absolute;right:13px;top:2px;background:url("/images/icons/ical_sprite.png") no-repeat scroll 1px 1px transparent;width:16px;height:17px;cursor:pointer}
+.title_sab{font-size:12px;color:#333;display:block;margin-top:-2px;line-height:19px}
+.title_sab span{display:block}
+.title_sab b{font-weight:bold}
+.iCal_text{font-size:12px;color:#666;display:block;width:350px;line-height:18px}
+.ical_button{margin-top:15px}
+.ical_button a{width:125px;height:20px;float:left;display:block;margin-right:10px}
+.ical_google{background:url("/images/icons/ical_sprite.png") no-repeat scroll 1px -43px transparent}
+.ical_ya{background:url("/images/icons/ical_sprite.png") no-repeat scroll 1px -20px transparent}
+.film_recom{font-family:tahoma,verdana,arial;color:#777;margin:0 0 0 20px}
+.film_recom *{list-style:none;margin:0;padding:0}
+.film_recom dt{background:#e6e6e6;height:22px;font-weight:bold;position:relative;padding:8px 0 0 19px}
+.film_recom dt a{color:#555;text-decoration:underline}
+.film_recom dt .hide{background:url(/images/movies/pls_mns.png) 0 -16px;width:11px;height:11px;display:block;position:absolute;top:10px;left:-15px}
+.film_recom dt .hide_link{color:#555;font-weight:normal;display:block;position:absolute;top:8px;right:7px;padding-left:15px}
+#film_recom{background:#f2f2f2 url(/images/movies/film_recom.jpg) 100% 100% no-repeat;width:535px;font-family:tahoma,verdana,"trebuchet ms";color:#777;margin:0 0 0 20px;padding-left:20px}
+#film_recom *{list-style:none;margin:0;padding:0}
+#film_recom a{text-decoration:underline}
+#film_recom .btnToggle{text-decoration:underline;cursor:pointer}
+#film_recom .recomLoader{display:none;float:left;left:280px;position:absolute;top:9px}
+#film_recom img{width:52px;border:3px #ccc solid;display:block;margin:0 auto}
+#film_recom dt{background:#e6e6e6;height:22px;color:#555;font-weight:bold;position:relative;margin:0 0 10px -20px;padding:8px 0 0 19px}
+#film_recom dt .show,#film_recom dt .hide{background-repeat:no-repeat !important;color:#555;font-weight:normal;display:block;position:absolute;top:8px;right:10px;padding-left:15px}
+#film_recom dt .show{background:url(/images/movies/show_hide_rating.gif) 0 4px}
+#film_recom dt .hide{background:url(/images/movies/show_hide_rating.gif) 0 -12px}
+#film_recom dt .close{background:url(/images/movies/pls_mns.png);width:11px;height:11px;overflow:hidden;display:block;position:absolute;top:10px;left:-15px}
+#film_recom dd{width:97px;text-align:center;float:left;padding:0 3px 10px 3px}
+#film_recom dd a{color:#007}
+#film_recom dd i{font-style:normal;display:block}
+#film_recom .seen,#film_recom .seen_recom,#film_recom .recom{background:#000;border:3px #484848 solid;width:52px;display:block;margin:0 auto}
+#film_recom .seen_recom,#film_recom .recom{border-color:#f60}
+#film_recom .seen img,#film_recom .seen_recom img,#film_recom .recom img{border:0;filter:alpha(opacity=30);opacity:.3;-moz-opacity:.3;-khtml-opacity:.3}
+#film_recom .recom img{filter:alpha(opacity=100);opacity:1.0;-moz-opacity:1.0;-khtml-opacity:1.0}
+#film_recom .hide_items{display:none}
+#film_recom .hide_items{display:none}
+#film_recom .last{display:block}
+#film_recom .last{background:#ffe3d1 url(/images/ic-rec.gif) 10px 11px no-repeat;width:290px;height:22px;text-align:left;clear:left;float:none;position:relative;margin-left:-20px;padding:8px 0 0 25px}
+#film_recom .last,#film_recom .last a{color:#555}
+#film_recom .last .show,#film_recom .last .hide{color:#777;top:8px;right:-230px;position:absolute}
+#film_recom .last .all{background:url(/images/movies/recom_all.gif) 0 4px no-repeat;white-space:nowrap;position:absolute;top:8px;right:-230px;padding-left:12px}
+.film_recom_empty{background-image:none !important;margin:0 0 0 20px !important}
+.film_recom_empty,.film_recom_empty .last{background-color:#ffe3d1 !important}
+.attent{color:#777;font-size:10px;font-weight:normal}
+.attent i{font-style:normal;padding-right:3px}
+#scroll{width:638px;border:1px #333 solid}
+#keyword{width:634px;color:#333;font-family:tahoma,verdana,"trebuchet ms";font-size:12px;border:1px #aaa solid;padding:3px 2px 4px 2px}
+#suggest table{width:100%;color:#676767;font-size:11px;font-weight:normal;text-decoration:none;text-align:left;border-collapse:collapse;border:0}
+.div_popup *{margin:0;padding:0}
+.div_popup{background:url(/images/bg_alert.png);width:390px;color:#555;font-family:tahoma,verdana,"trebuchet ms";font-size:11px;position:absolute;padding:10px;z-index:1151 !important}
+.div_popup div{background:#f6c8a9 url(/images/movies/bg_cash.jpg) 100% 100% no-repeat;padding:15px 5px 13px 20px}
+.div_popup i{background:url(/images/bg_close_3.gif);width:11px;height:11px;cursor:pointer;overflow:hidden;display:block;position:absolute;top:20px;right:20px}
+.div_popup a{color:#f60;text-decoration:underline}
+.div_popup input{background:#ece9d8 url(/images/icons/inputs.gif);width:120px;height:26px;color:#333;font-family:tahoma,verdana,"trebuchet ms";font-size:11px;border:1px #fff outset;cursor:pointer;display:block;margin:0 auto;padding:4px 0 5px 0}
+.div_popup dl{padding-bottom:7px}
+.div_popup dt,.div_popup dd{height:19px;overflow:hidden;clear:left}
+.div_popup dd *{float:left}
+.div_popup b{width:135px;font-weight:normal;text-align:right;padding-right:25px}
+.div_popup u,.div_popup s{text-decoration:none}
+.div_popup s{position:absolute;margin-left:-8px}
+.div_popup u i{background:0;color:#777;font-style:normal;cursor:default;float:none;display:inline;position:static}
+.div_popup u .perc{color:#777}
+.div_popup span{font-weight:bold;float:none;padding-right:8px}
+.div_popup .sep span{width:93px;height:12px;border-bottom:1px #777 dotted;overflow:hidden;display:block;margin-left:100px;padding:0}
+.div_popup .list,.div_popup .list li{list-style:none}
+.div_popup .list{width:150px;margin:25px auto;padding-bottom:5px}
+.div_popup .list li{font-weight:bold;margin-bottom:5px}
+.div_popup .list s{background:#958377;width:2px;height:2px;display:block;margin-top:6px}
+.div_popup .nobg{background:#f6c8a9}
+form.rating_stars{color:#333;overflow:hidden;margin:0 0 -20px 0;padding:10px 0 20px 20px}
+form.rating_stars *{margin:0;padding:0}
+.block1{width:260px;float:left;position:relative;z-index:10}
+.block1 .action{background:url(/images/movies/pls_mns.png);width:11px;height:11px;overflow:hidden;display:block;position:absolute;top:1px;left:-15px}
+.block1 .pls{background-position:0 -12px}
+.block_2{width:130px;float:left;margin-top:-3px !important;padding-top:0}
+.div1{width:170px;color:#f60;font-family:tahoma;font-size:25px}
+.block3{width:160px;float:right;position:relative;padding-top:5px}
+.block3 div{padding-left:29px}
+.block3 div span{top:1px !important}
+.block3 .about{background:url(/images/help-vote2.jpg) no-repeat;width:131px;text-align:right;position:absolute;top:36px;left:29px;z-index:10;padding-bottom:2px}
+.block3 .about a{color:#999;font-size:11px;text-decoration:underline}
+form.rating_stars p.rating{font-size:11px;font-weight:bold}
+form.rating_stars p.rating *{font-weight:normal}
+form.rating_stars p.rating b{font-weight:bold}
+form.rating_stars p.rating i{font-style:normal !important}
+#votep span{display:none}
+#votep.s .s{display:inline;color:#880}
+#votep.u .u{display:inline}
+#votep.ss .ss{display:inline}
+#votep.e .e{display:inline;color:#800}
+#vote_note span{display:none}
+#vote_note.s .s{display:inline;color:#880}
+#vote_note.u .u{display:inline}
+.film_descr,.film_descr *{color:#555;font-family:arial;font-size:12px;position:relative;margin:0;padding:0}
+.film_descr{display:none;margin:8px 0 20px 20px}
+.film_descr .descr{background:#fbfb59;padding:9px 12px}
+.film_descr a{color:#007;text-decoration:underline}
+.film_descr form *{color:#333}
+.film_descr textarea{background:#fbfb59;width:539px;height:64px;border:1px #999 solid;display:block;margin-bottom:5px;padding:8px 7px}
+.film_descr input{background:#f2f2f2;width:100px;font-family:tahoma,verdana,"trebuchet ms";font-size:11px;border:1px #fff outset;padding:3px 0 5px 0}
+.film_descr .save{font-weight:bold;margin-right:1px}
+.film_descr .delete{margin-right:9px}
+.film_descr span{color:#777;font-family:tahoma,verdana,"trebuchet ms";font-size:10px}
+.film_descr .edit_remove{background:#fdfdb4;width:180px;height:16px;overflow:hidden;position:absolute;bottom:-16px;right:0}
+.film_descr .edit_remove a{background:url(/images/movies/film_descr.gif) no-repeat;font-size:10px;position:absolute;top:0;padding-left:14px}
+.film_descr .edit{background-position:0 3px !important;color:#777;left:10px}
+.film_descr .remove{background-position:0 -16px !important;color:#bf3737;right:10px}
+.film_descr .loader{background:url(/images/loaders/333_fff.gif);width:16px;height:16px;display:none;position:absolute;top:0;left:-18px}
+.film_menu,.film_menu *{list-style:none;margin:0;padding:0}
+.film_menu{background:#fff;height:18px;font-size:11px;font-weight:bold;border-top:1px #999 solid;margin-top:20px;padding-left:22px}
+.film_menu li{background:#f2f2f2;height:16px;border-bottom:1px #999 solid;float:left;position:relative;margin-top:-1px;padding:2px 7px 0 6px}
+.film_menu s{background:#fff url(/images/film_menu_bg.gif) 0 -1px no-repeat;width:2px;height:18px;overflow:hidden;display:block;position:absolute;top:1px;left:-1px}
+.film_menu u{background:#fff url(/images/film_menu_bg.gif) 0 -20px no-repeat;width:2px;height:18px;overflow:hidden;display:block;position:absolute;top:1px;right:0}
+.film_menu b{color:#f60}
+.film_menu a,.film_menu a:hover{color:#555}
+.film_menu .off,.film_menu .off *{color:#999}
+.film_menu .gray *,.film_menu .gray a:hover *{color:#999 !important;text-decoration:underline}
+.film_menu .last a{color:#f60}
+.film_menu .last b{color:#555}
+.film_menu .last u{right:-1px}
+.film_menu_2 li{padding:2px 20px 0 19px}
+@media only screen and (max-device-width:480px){.film_menu,.film_menu b{font-weight:normal}
+}
+.block_blog{width:300px;border-top:1px #999 dotted;position:relative;margin:12px 0 0 20px;padding:20px 0 35px 255px}
+.block_blog *{list-style:none;margin:0;padding:0}
+.blogs{width:240px;height:45px;overflow:hidden;position:relative;position:absolute;top:18px;left:0}
+.blogs ul{height:26px;overflow:hidden;margin-bottom:3px}
+.blogs li{float:left;padding-right:4px}
+.blogs li a{background:url(/images/movies/blogs.gif?20130813);width:26px;height:26px;float:left;display:block}
+.blogs .lj a{background-position:0 0}
+.blogs .lj a:hover{background-position:0 -27px}
+.blogs .vk a{background-position:-27px 0}
+.blogs .vk a:hover{background-position:-27px -27px}
+.blogs .fb a{background-position:-54px 0}
+.blogs .fb a:hover{background-position:-54px -27px}
+.blogs .tw a{background-position:-81px 0}
+.blogs .tw a:hover{background-position:-81px -27px}
+.blogs .ma a{background-position:-108px 0}
+.blogs .ma a:hover{background-position:-108px -27px}
+.blogs .send a{background-position:-135px 0}
+.blogs .send a:hover{background-position:-135px -27px}
+.blogs .ok a{background-position:-162px 0}
+.blogs .ok a:hover{background-position:-162px -27px}
+.blogs .ya a{background-position:-189px 0}
+.blogs .ya a:hover{background-position:-189px -27px}
+.blogs .qr a{background-position:-243px 0}
+.blogs .qr a:hover{background-position:-243px -27px}
+.blogs span{color:#777;font-size:10px;white-space:nowrap;position:absolute}
+.block_blog .pls{background-position:0 -12px}
+.block_blog_border_none{border-top:0;padding-top:0}
+.block_blog_border_none .blogs{top:0}
+.block_blog .movie_closers{top:26px}
+.block_blog_border_none .movie_closers{top:8px}
+.movie_send_alert .send_alert{margin-top:0}
+.omlet_movie{background:url(/images/re/omlet/movie_bg.gif) 0 2px no-repeat;width:130px;height:68px;color:#333;font-size:11px;font-family:arial;position:relative}
+.omlet_movie img{border:0}
+.omlet_movie .logo{position:absolute;top:3px;left:-8px}
+.omlet_movie .watch{width:61px;height:17px;position:absolute;top:27px;left:51px}
+.omlet_movie .download{width:61px;height:17px;display:block;position:absolute;top:47px;left:51px}
+.omlet_movie .download_midle{width:61px;height:17px;display:block;position:absolute;top:37px;left:51px}
+.omlet_movie .price_1{position:absolute;top:28px;left:15px}
+.omlet_movie .price_2{position:absolute;top:48px;left:15px}
+.omlet_movie .price_midle{position:absolute;top:38px;left:15px}
+.omlet_catalog_top{color:#010101;font-family:arial;font-size:22px;position:relative;margin:24px 0 38px 0;padding-left:128px}
+.omlet_catalog_top .logo{position:absolute;top:-7px;left:0}
+.omlet_catalog{background:#bebebe url(/images/re/omlet/catalog_bg_item.gif);width:162px;height:21px;color:#333;font-size:11px;font-family:arial;position:relative}
+.omlet_catalog img{border:0}
+.omlet_catalog .watch{width:61px;height:17px;position:absolute;top:2px;left:39px}
+.omlet_catalog .price{position:absolute;top:3px;left:3px}
+.omlet_catalog_bottom{background:url(/images/re/omlet/catalog_bg_bottom.gif);width:555px;height:60px;color:#010101;font-family:arial;font-size:12px;font-weight:bold;position:relative;margin:30px 0 0 12px}
+.omlet_catalog_bottom .red_1{width:46px;color:#fff;text-align:center;position:absolute;top:22px;left:130px}
+.omlet_catalog_bottom .red_2{width:41px;color:#fff;text-align:center;position:absolute;top:22px;left:260px}
+.omlet_catalog_bottom .word_1{position:absolute;top:22px;left:187px}
+.omlet_catalog_bottom .word_2{position:absolute;top:22px;left:311px}
+.omlet_catalog_bottom .red_link{white-space:nowrap;position:absolute;top:22px;right:2px}
+.omlet_catalog_bottom .red_link a{color:red;text-decoration:none}
+.omlet_index dt{background:url(/images/re/omlet/index_header.gif) !important;padding-left:90px !important}
+.omlet_index dd i{width:134px !important;padding-right:5px !important}
+.omlet_index dd s{width:134px !important}
+.omlet_index dd u{width:25px !important;float:left !important}
+.omlet_index dd span{background:url(/images/re/omlet/index_bg.gif);width:43px;height:17px;color:#333;font-family:arial;font-size:11px;text-align:center;overflow:hidden;float:left;margin-top:3px !important;padding:4px 0 0 0 !important}
+.movie_send_alert{color:#555;display:none}
+.movie_send_alert *{font-family:arial;margin:0;padding:0}
+.movie_send_alert .send_alert{background:url(/images/bg_alert_movie.png);width:490px;position:absolute;display:block;margin:80px 0 0 170px;padding:10px;z-index:1000}
+.movie_send_alert form{background:#f6c8a9;padding:15px}
+.movie_send_alert a.close{background:url(/images/bg_close.gif);width:11px;height:11px;overflow:hidden;display:block;position:absolute;top:15px;right:15px}
+.movie_send_alert p{font-size:12px;font-weight:bold;margin:5px 0 20px 0}
+.movie_send_alert .link{color:#005;text-decoration:underline;cursor:pointer}
+.movie_send_alert .text,.movie_send_alert textarea{width:454px;color:#333;font-size:12px;border:1px #7f9db9 solid;display:block;margin-bottom:2px;padding:2px}
+.movie_send_alert .text{color:#333}
+.movie_send_alert .disabled{background:#f2f2f2;border-color:#b9c8d6}
+.movie_send_alert textarea{height:116px}
+.movie_send_alert input.send,.movie_send_alert input.close{background:#f2f2f2;width:120px;color:#333;font-family:tahoma,verdana,"trebuchet ms";font-size:11px;border:1px #ccc outset;float:left;display:block;padding-top:4px;padding-bottom:5px}
+.movie_send_alert input.send{font-weight:bold;margin:5px 3px 5px 105px}
+.movie_send_alert input.close{margin:5px 0}
+.movie_send_alert span{font-size:10px;clear:left;display:block}
+.movie_send_alert i{font-style:normal;display:block;position:absolute;margin-left:-8px}
+.popup_help_icon{background:url(/images/movies/movies_icons.png?v=3) 0 -320px;width:9px;height:9px;cursor:pointer;overflow:hidden;display:inline;position:absolute;margin:3px 0 0 5px}
+.ac_results{width:456px !important;margin:5px 0 0 -4px}
+#div_rus_prem .list,#div_rus_prem .list *,#div_rus_rerelease_prem .list,#div_rus_rerelease_prem .list *{font-size:12px !important;font-weight:normal !important}
+.inviteFriends{margin-bottom:20px}
+.inviteFriends .title{background:#e3e8f0;height:19px;color:#005;font-weight:bold;position:relative;padding:6px 12px 0 12px}
+.inviteFriends .close{background:url(/images/bg_close.gif);width:11px;height:11px;overflow:hidden;display:block;position:absolute;top:7px;right:8px}
+.inviteFriends .descr{background:#f2f2f2;color:#555;font-family:arial;font-size:12px;padding:15px 10px 16px 12px}
+.inviteFriends .descr a{color:#555;text-decoration:underline}
+.filmTv{position:relative;padding:6px 0 0 81px}
+.filmTv a{text-decoration:underline}
+.filmTv .pic{position:absolute;margin:10px 0 0 -67px}
+.filmTv .pic img{border:0}
+.filmTv table{border-collapse:collapse;border-left:1px #ccc solid}
+.filmTv td{height:51px;color:#555;vertical-align:middle;padding:0 0 0 29px}
+.filmTv td .title{color:#f60;font-weight:bold}
+.filmTv td a{color:#005}
+.filmTv .more{position:absolute;top:31px;right:0}
+.filmTv .more a{color:#999;text-decoration:underline}
+.to_friend,.to_friend *{list-style:none;margin:0;padding:0}
+.to_friend{height:18px;overflow:hidden;position:absolute;bottom:60px;left:28px;font-size:11px}
+.to_friend li{float:left}
+.to_friend li a{background:url(/images/movies/to_friend_l.png);height:18px;float:left;display:block}
+.to_friend .el_1,.to_friend .el_1_Off{width:24px}
+.to_friend .el_2{width:29px}
+.to_friend .el_2,.to_friend .el_2_Off{width:29px}
+.to_friend .el_3{width:21px}
+.to_friend .el_1 a,.to_friend .el_1_Off a{background-position:0 0;width:19px}
+.to_friend .el_2 a,.to_friend .el_2_Off a{background-position:-20px 0;width:24px}
+.to_friend .el_1_Off{filter:alpha(opacity=50);opacity:.5;-moz-opacity:.5;-khtml-opacity:.5}
+.to_friend .el_3 a{background-position:-45px 0;width:21px}
+.to_friend .el_1 a:hover,.to_friend .el_1 a.el_1_act{background-position:0 -19px}
+.to_friend .el_1 a:hover{filter:alpha(opacity=50);opacity:.5;-moz-opacity:.5;-khtml-opacity:.5}
+.to_friend .el_1_act:hover{filter:alpha(opacity=100) !important;opacity:1 !important;-moz-opacity:1 !important;-khtml-opacity:1 !important}
+.to_friend .el_2 a:hover,.to_friend .el_2 a.el_2_act{background-position:-20px -19px}
+.to_friend .el_2 a:hover{filter:alpha(opacity=50);opacity:.5;-moz-opacity:.5;-khtml-opacity:.5}
+.to_friend .el_2_act:hover{filter:alpha(opacity=100) !important;opacity:1 !important;-moz-opacity:1 !important;-khtml-opacity:1 !important}
+.to_friend .el_3 a:hover,.to_friend .el_3 a.el_3_act{background-position:-45px -19px}
+.to_friend .el_3 a:hover{filter:alpha(opacity=50);opacity:.5;-moz-opacity:.5;-khtml-opacity:.5}
+.to_friend .el_3_act:hover{filter:alpha(opacity=100) !important;opacity:1 !important;-moz-opacity:1 !important;-khtml-opacity:1 !important}
+.to_friend .loader{background:url(/images/loaders/snake_f60_f2f2f2.gif);width:16px;height:16px;overflow:hidden;margin:0 auto;display:none; position:static !important;}
+.youtubeTrailer{width:535px;max-height:304px}
+.youtubeTrailer object,.youtubeTrailer embed{max-width:535px}
+.inLists{background:#f2f2f2 url(/images/inListsBg.jpg) 100% 100% no-repeat;font-size:11px;position:relative;margin:20px 0 20px 20px;padding:14px 0 14px 15px}
+.inLists *{list-style:none;margin:0;padding:0}
+.inLists a{color:#555;text-decoration:underline}
+.inLists .opener{background:url(/images/movies/pls_mns.png);width:11px;height:11px;cursor:pointer;overflow:hidden;display:block;position:absolute;top:16px;left:-15px}
+.inLists .title{font-weight:bold;margin-bottom:13px}
+.inLists .all{position:absolute;top:14px;right:15px}
+.inLists .openDown{color:#777;cursor:pointer;display:none;position:absolute;top:14px;right:15px}
+.inLists .list{font-family:arial;font-size:12px}
+.inLists .list li{width:240px;float:left;padding-left:10px}
+.inLists .list .first{width:245px;padding-right:35px}
+.inLists .list s{background:#669;width:2px;height:2px;overflow:hidden;position:absolute;margin:7px 0 0 -10px}
+.inLists .list a{color:#007}
+.inLists .list .arrow{color:#669;font-family:tahoma,verdana,"trebuchet ms";padding:0 3px}
+.inLists .list .clear{float:none;padding:0}
+.inListsClosed{background-image:none}
+.inListsClosed .opener{background-position:0 -16px}
+.inListsClosed .title{margin:0}
+.inListsClosed .all{display:none}
+.inListsClosed .openDown{display:block}
+.inListsClosed .list{display:none}
+.selectboxWidget{width:130px;min-height:1px;color:#333;font-family:tahoma,verdana;font-size:11px;cursor:default;position:relative}
+.selectboxWidget *{list-style:none;margin:0;padding:0}
+.selectboxWidget .static .title{background:url(/images/selectboxWidget.gif);height:20px;font-weight:bold;border:1px #999 solid;border-left:0;position:relative}
+.selectboxWidget .static .title .text{width:93px;white-space:nowrap;cursor:pointer;overflow:hidden;padding:3px 0 0 14px}
+.selectboxWidget .static .title .text .icon{background:url(/images/selectboxWidget.gif) -26px -21px;width:6px;height:7px;overflow:hidden;position:absolute;top:7px;left:4px}
+.selectboxWidget .static .title .text .loader{background:url(/images/selectboxWidgetLoader.gif);width:16px;height:11px;overflow:hidden;display:none;position:absolute;top:5px;left:45px}
+.selectboxWidget .static .title .text:hover .icon{opacity:.6;filter:alpha(opacity=6)}
+.selectboxWidget .static .title .text:hover .folderName{opacity:.6;filter:alpha(opacity=6)}
+.selectboxWidget .static .title .arrowDown{width:21px;height:20px;border-left:1px #999 solid;cursor:pointer;overflow:hidden;position:absolute;top:0;left:107px}
+.selectboxWidget .static .title .arrowDown .icon{background:url(/images/selectboxWidget.gif) -16px -31px;width:9px;height:6px;overflow:hidden;position:absolute;top:8px;left:6px}
+.selectboxWidget .static .title .arrowDown:hover .icon{opacity:.6;filter:alpha(opacity=6)}
+.selectboxWidget .static .title .text.hide{cursor:default}
+.selectboxWidget .static .title .text.hide .icon{display:none}
+.selectboxWidget .static .title .text.hide .folderName{display:none}
+.selectboxWidget .static .title .text.hide .loader{display:block}
+.selectboxWidget .static .title.active{background:#6d84b4;height:21px;border-color:#3b5998;border-right-color:#6d84b4;border-bottom:0}
+.selectboxWidget .static .title.active .text{color:#fff}
+.selectboxWidget .static .title.active .text .icon{background-position:-25px -38px;width:5px;height:6px}
+.selectboxWidget .static .title.active .arrowDown{height:21px;border-color:#3b5998}
+.selectboxWidget .static .title.active .arrowDown .icon{background-position:-26px -31px}
+.selectboxWidget .folderNames{background:#e3e3e3;border-top:1px #f2f2f2 solid;padding:8px 5px 12px 14px}
+.selectboxWidget .folderNames a{color:#777;text-decoration:underline}
+.selectboxWidget .folderNames a:hover{text-decoration:none}
+.selectboxWidget .allFolders{min-height:1px;color:#777;font-size:10px;position:relative;margin-top:9px;padding-left:14px}
+.selectboxWidget .allFolders .dot{background:#777;width:2px;height:2px;overflow:hidden;position:absolute;top:6px;left:7px}
+.selectboxWidget .allFolders .text a{color:#777}
+.selectboxWidget .allFolders .text a:hover{text-decoration:underline}
+.selectboxWidget .allFolders .info{background:url(/images/selectboxWidget.gif) -16px -21px;width:9px;height:9px;cursor:pointer;overflow:hidden;position:absolute;top:2px;right:7px}
+.selectboxWidget .allFolders .info:hover{opacity:.6;filter:alpha(opacity=6)}
+.selectboxWidget .popup{width:215px;position:absolute;top:0;left:0;z-index:1000}
+.selectboxWidget .popup .title{background:#6d84b4;height:18px;color:#fff;font-weight:bold;border-top:1px #3b5998 solid;cursor:pointer;position:relative;padding:3px 0 0 14px}
+.selectboxWidget .popup .title .arrowDown{background:url(/images/selectboxWidget.gif) -26px -31px;width:9px;height:6px;overflow:hidden;position:absolute;top:8px;right:7px}
+.selectboxWidget .popup .list{background:#fff;max-height:297px;border-bottom:2px #999 solid;overflow:auto;padding:5px 0}
+.selectboxWidget .popup .list .item{height:20px;position:relative}
+.selectboxWidget .popup .list .item .name{height:17px;cursor:pointer;padding:3px 0 0 40px}
+.selectboxWidget .popup .list .item .name .check{background:url(/images/selectboxWidget.gif) -16px -38px;width:8px;height:8px;overflow:hidden;display:none;position:absolute;top:6px;left:7px}
+.selectboxWidget .popup .list .item .name .folder{background:url(/images/selectboxWidget.gif);width:13px;height:11px;overflow:hidden;position:absolute;top:4px;left:20px}
+.selectboxWidget .popup .list .item .link{width:23px;height:20px;position:absolute;top:0;right:0}
+.selectboxWidget .popup .list .item .link .arrow{background:url(/images/selectboxWidget.gif) -16px -47px;width:6px;height:5px;overflow:hidden;position:absolute;top:8px;left:9px}
+.selectboxWidget .popup .list .item .link a{width:23px;height:20px;display:block;position:absolute;top:0;right:0}
+.selectboxWidget .popup .list .item .link:hover{background:#ffdcc4;border-left:1px #fff solid}
+.selectboxWidget .popup .list .item.checked .check{display:block}
+.selectboxWidget .popup .list .item.public .folder{background-position:0 -21px}
+.selectboxWidget .popup .list .item.private .folder{background-position:0 -33px}
+.selectboxWidget .popup .list .item.fav.public .folder{background-position:0 -45px;width:15px;height:13px}
+.selectboxWidget .popup .list .item.fav.private .folder{background-position:0 -59px;width:15px;height:13px}
+.selectboxWidget .popup .list .item:hover{background:#e5e5e5}
+.ageLimit{background:url(/images/ageLimit.gif);width:18px;height:12px;overflow:hidden;display:block;margin-top:1px !important;float:left}
+.ageLimit.age0{background-position:0 0}
+.ageLimit.age6{background-position:0 -13px}
+.ageLimit.age12{background-position:0 -26px}
+.ageLimit.age14{background-position:0 -39px}
+.ageLimit.age16{background-position:0 -52px}
+.ageLimit.age18{background-position:0 -65px}
+.inLists2{background:#f2f2f2;font-size:11px;position:relative;margin:0 0 20px 20px}
+.inLists2 *{list-style:none;margin:0;padding:0}
+.inLists2 a{color:#555;text-decoration:underline}
+.inLists2 .switch{background:url(/images/movies/pls_mns.png);width:11px;height:11px;cursor:pointer;overflow:hidden;display:block;position:absolute;top:10px;left:-15px}
+.inLists2 .top{background:#e6e6e6;height:22px;padding:8px 0 0 19px}
+.inLists2 .top .title{color:#555;font-weight:bold;display:table}
+.inLists2 .top div.title{display:block}
+.inLists2 .top div.title a{text-decoration:none}
+.inLists2 .top div.title a:hover{text-decoration:underline}
+.inLists2 .top a.title{display:none}
+.inLists2 .top .all{color:#555;position:absolute;top:8px;right:10px}
+.inLists2 .top .all a{color:#555}
+.inLists2 .lists{padding:6px 0 12px 0}
+.inLists2 .list{width:241px;font-family:arial;font-size:12px;float:left;padding-left:25px}
+.inLists2 .list dt{background:#a7a7a7;width:21px;height:11px;color:#f6f6f6;font-family:tahoma,verdana;font-size:10px;line-height:8px;overflow:hidden;display:table;margin:5px 0 3px 0;padding:0 3px}
+.inLists2 .list dd{margin-bottom:1px}
+.inLists2 .list .num{background:#fa9e61;width:21px;height:11px;color:#fff;font-family:tahoma,verdana;font-size:10px;line-height:10px;text-align:center;overflow:hidden;position:absolute;margin:2px 0 0 -25px}
+.inLists2 .list .link a{color:#007}
+.inLists2 .first{width:261px;padding-right:3px}
+.inLists2 .single{width:522px;padding-right:3px}
+.inLists2 .top .rollDown{display:none}
+.inLists2 .top .all{display:block}
+.inLists2Closed .lists{display:none}
+.inLists2Closed .switch{background-position:0 -16px}
+.inLists2Closed .top .title{text-decoration:underline;cursor:pointer}
+.inLists2Closed .top div.title{display:none}
+.inLists2Closed .top a.title{display:block}
+.inLists2Closed .top .all{display:none}
+.inLists2Closed .top .rollDown{color:#555;display:block;position:absolute;top:8px;right:7px}
+.inLists2Closed .top .all{display:none}
+.inLists2Closed .top .rollDown{color:#555}
+.inLists2Closed .top .rollDown u{cursor:pointer}
+.flag{width:18px;height:13px;border:1px #ccc solid;float:left;margin-left:4px}
+.flag a{border:1px #fff solid}
+.movieFlags{float:right}
+.buyTicketFilm{background:#dfdfdf;width:63px;height:57px;font-family:arial;text-align:center;position:absolute;top:0;left:598px;padding:10px 13px 9px 13px}
+.buyTicketFilm .element{background:url(/images/buyTicket.gif);width:63px;height:57px;cursor:pointer}
+.buyTicketFilm .element:hover{opacity:.7;filter:alpha(opacity=70)}
+.buyTicketFilm .text1{width:63px;color:#333;font-weight:bold;line-height:12px;display:block;position:absolute;top:15px;left:13px}
+.buyTicketFilm .text2{width:63px;color:#007;text-decoration:underline;display:block;position:absolute;top:46px;left:13px}
+.buyTicketFilm .link{position:absolute;top:10px;left:13px}
+.buyTicketFilm .link a{background:url(/images/spacer.gif);width:63px;height:57px;display:block}
+#photo_popup_container td{text-align:center;cursor:pointer}
+#photo_popup_container img{box-shadow:0 0 20px #000;border-bottom:solid 3px #f60}
+#photo_popup_container .close_button{background:url(/images/spec/closeTrailerWhite.png);display:none;height:21px;margin-left:-21px;margin-top:-31px;position:absolute;width:21px}
+.ratePopup td span{display:none}
+.ratePopupAct td span{color:#777;text-decoration:none;white-space:nowrap;display:inline;position:absolute;margin:0 0 0 10px}
+.to_friend{overflow:visible}
+.to_friend .num{width:48px;color:#999;font-size:10px;text-align:center;position:absolute;bottom:-15px;left:-14px}
+.to_friend .link{background:url(/images/spacer.gif);color:#aaa;width:85px;text-align:center;white-space:nowrap;display:none;position:absolute;top:-22px;left:-6px;padding-bottom:9px}
+.to_friend .linkOff{display:none}
+.to_friend .link a{background:0;width:auto;height:auto;color:#aaa;text-decoration:underline;float:none;display:inline;position:relative;opacity:1 !important;-moz-opacity:1 !important;-khtml-opacity:1 !important}
+.to_friend li:hover .link{display:block}
+.film_menu{margin-top:25px !important}
+.friendsPopup{background:#f2f2f2 url(/images/recom/recom_user4.jpg) 120% 100% no-repeat;width:209px;font-size:10px;border:2px #999 solid;display:none;position:absolute;z-index:900;padding:26px 17px 20px 10px}
+.friendsPopup .allVotes{width:149px;height:20px;color:#f60;font-family:arial;font-size:12px;font-weight:bold;float:left;margin-bottom:4px;padding-top:4px}
+.friendsPopup .allVotesNum{background:#717478;width:60px;height:20px;color:#fff;font-family:arial;font-size:12px;font-weight:bold;text-align:center;float:left;margin-bottom:4px;padding-top:4px}
+.friendsPopup .allVotesNum.red{background:#f92e30}
+.friendsPopup .allVotesNum.green{background:#448d48}
+.friendsPopup .item{height:24px}
+.friendsPopup .item .name{width:144px;float:left;padding:4px 0 0 5px}
+.friendsPopup .item .name .profile_name{height:auto;font-size:11px;padding-top:0}
+.friendsPopup .item .name .profile_name s{top:0}
+.friendsPopup .item .status{width:24px;height:16px;color:#333;line-height:20px;text-align:center;float:left;margin:3px 0 0 18px}
+.friendsPopup .item .status.watched{background:url(/images/icons/eye.png);width:24px;height:16px;overflow:hidden}
+.friendsPopup .item .status.waiting{background:url(/images/icons/123sprite.png) no-repeat -238px -1px;width:20px;height:20px;margin-left:22px;overflow:hidden}
+.friendsPopup .item .status.fav{background:url(/images/icons/heart.png);width:23px;height:20px;color:#fff;font-size:10px;line-height:18px;overflow:hidden}
+.friendsPopup .item .status.vote{width:60px;height:20px;color:#777;font-size:10px;line-height:18px;font-weight:bold;text-align:center;float:left;padding-top:0;margin:0;overflow:hidden}
+.friendsPopup .item .voete{width:60px;text-align:center;float:left;padding-top:4px}
+.friendsPopup .closeText{font-size:10px;color:#777;text-decoration:underline;cursor:pointer;display:inline-block;margin-top:10px}
+.friendsPopup .close{background:url(/images/bg_close.gif);width:11px;height:11px;cursor:pointer;overflow:hidden;position:absolute;top:8px;right:5px}
+.friendsPopup .close:hover{opacity:.7;filter:alpha(opacity=70)}
+.friendsByInterestPopup{background:#f2f2f2 url(/images/recom/recom_user4.jpg) 120% 100% no-repeat;width:209px;font-size:10px;border:2px #999 solid;display:none;position:absolute;z-index:900;padding:26px 17px 20px 10px}
+.friendsByInterestPopup .allVotes{width:149px;height:20px;color:#f60;font-family:arial;font-size:12px;font-weight:bold;float:left;margin-bottom:4px;padding-top:4px}
+.friendsByInterestPopup .allVotesNum{background:#f60;width:60px;height:20px;color:#fff;font-family:arial;font-size:12px;font-weight:bold;text-align:center;float:left;margin-bottom:4px;padding-top:4px}
+.friendsByInterestPopup .allVotesNum.red{background:#f92e30}
+.friendsByInterestPopup .allVotesNum.green{background:#448d48}
+.friendsByInterestPopup .item{height:24px}
+.friendsByInterestPopup .item .name{width:144px;float:left;padding:4px 0 0 5px}
+.friendsByInterestPopup .item .name .profile_name{height:auto;font-size:11px;padding-top:0}
+.friendsByInterestPopup .item .name .profile_name s{top:0}
+.friendsByInterestPopup .item .rating{width:36px;float:left;padding-top:4px}
+.friendsByInterestPopup .item .rating a{color:#f60;text-decoration:underline}
+.friendsByInterestPopup .item .vote{width:24px;color:#777;font-weight:bold;text-align:center;float:left;padding-top:4px}
+.friendsByInterestPopup .item .eye{background:url(/images/icons/eye.png);width:24px;height:16px;overflow:hidden;float:left;margin-top:3px}
+.friendsByInterestPopup .item .status{width:24px;height:16px;color:#333;line-height:20px;text-align:center;float:left;margin-top:1px}
+.friendsByInterestPopup .item .status.watched{background:url(/images/icons/eye.png);width:24px;height:16px;margin-left:0;overflow:hidden}
+.friendsByInterestPopup .item .status.waiting{background:url(/images/icons/clock.png);width:15px;height:15px;margin-left:5px;overflow:hidden}
+.friendsByInterestPopup .item .status.fav{background:url(/images/icons/heart.png);width:23px;height:20px;color:#fff;font-size:10px;line-height:18px;margin-left:1px;overflow:hidden}
+.friendsByInterestPopup .item .status.vote{width:24px;height:20px;color:#777;font-size:10px;line-height:18px;font-weight:bold;text-align:center;float:left;padding-top:1px;margin:0;overflow:hidden}
+.friendsByInterestPopup .closeText{font-size:10px;color:#777;text-decoration:underline;cursor:pointer;display:inline-block;margin-top:10px}
+.friendsByInterestPopup .close{background:url(/images/bg_close.gif);width:11px;height:11px;cursor:pointer;overflow:hidden;position:absolute;top:8px;right:5px}
+.friendsByInterestPopup .close:hover{opacity:.7;filter:alpha(opacity=70)}
+.friendsByInterests{width:240px;min-height:1px;color:#000;font-family:tahoma,verdana,arial;font-size:11px;cursor:default;position:relative;margin-bottom:-10px}
+.friendsByInterests.closed{margin-bottom:0}
+.friendsByInterests .switch{background:url(/images/movies/pls_mns.png);width:11px;height:11px;cursor:pointer;overflow:hidden;display:block;position:absolute;top:7px;left:-15px}
+.friendsByInterests .top{background:#c8c8c8;background:-moz-linear-gradient(top,#e9e9e9 0,#c8c8c8 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#e9e9e9),color-stop(100%,#c8c8c8));background:-webkit-linear-gradient(top,#e9e9e9 0,#c8c8c8 100%);background:-o-linear-gradient(top,#e9e9e9 0,#c8c8c8 100%);background:-ms-linear-gradient(top,#e9e9e9 0,#c8c8c8 100%);background:linear-gradient(top,#e9e9e9 0,#c8c8c8 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9',endColorstr='#c8c8c8',GradientType=0);height:27px;line-height:25px;position:relative;padding-left:7px;border-bottom:1px solid silver}
+.friendsByInterests .top .link{color:#454545;text-shadow:0 1px 1px #fff}
+.friendsByInterests .top .link.big{cursor:pointer;margin-left:7px;padding-left:2px;border-bottom:1px dashed #666666;}
+.friendsByInterests .top .link.big.first{margin-left:0px;padding-left:0px}
+.friendsByInterests .top .link.off{text-decoration:none;cursor:auto;font-weight:bold;color:#454545;border-bottom:none;}
+.friendsByInterests .top .link.big:hover{border-bottom:0px}
+.friendsByInterests .top .active{background:0;font-weight:bold;text-decoration:none;cursor:default}
+.friendsByInterests .top s{background:#000;width:3px;height:3px;overflow:hidden;display:inline-block;margin:0 5px 2px 4px}
+.friendsByInterests .top .average{width:49px;height:27px;color:#fff;text-shadow:1px 1px 1px #333;font-weight:bold;text-align:center;position:absolute;top:0;right:0}
+.friendsByInterests .top .average.green{background:-moz-linear-gradient(top,#c9dbba 0,#adbd9f 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#c9dbba),color-stop(100%,#adbd9f));background:-webkit-linear-gradient(top,#c9dbba 0,#adbd9f 100%);background:-o-linear-gradient(top,#c9dbba 0,#adbd9f 100%);background:-ms-linear-gradient(top,#c9dbba 0,#adbd9f 100%);background:linear-gradient(top,#c9dbba 0,#adbd9f 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9dbba',endColorstr='#adbd9f',GradientType=0);border-left:1px solid #b1c0a3;border-bottom:1px solid #b1c0a3;color:#1d6816;text-shadow:0 1px 1px #fff;font-size:11px;font-weight:bold;text-align:center}
+.friendsByInterests .top .average.red{background:-moz-linear-gradient(top,#e7bfba 0,#c7a4a0 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#e7bfba),color-stop(100%,#c7a4a0));background:-webkit-linear-gradient(top,#e7bfba 0,#c7a4a0 100%);background:-o-linear-gradient(top,#e7bfba 0,#c7a4a0 100%);background:-ms-linear-gradient(top,#e7bfba 0,#c7a4a0 100%);background:linear-gradient(top,#e7bfba 0,#c7a4a0 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7bfba',endColorstr='#c7a4a0',GradientType=0);border-left:1px solid #cca9a5;border-bottom:1px solid #cca9a5;color:#be1400;text-shadow:0 1px 1px #fff;font-size:11px;font-weight:bold;text-align:center}
+.friendsByInterests .top .average.silver{background:-moz-linear-gradient(top,#c1c1c1 0,#a5a5a5 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#c1c1c1),color-stop(100%,#a5a5a5));background:-webkit-linear-gradient(top,#c1c1c1 0,#a5a5a5 100%);background:-o-linear-gradient(top,#c1c1c1 0,#a5a5a5 100%);background:-ms-linear-gradient(top,#c1c1c1 0,#a5a5a5 100%);background:linear-gradient(top,#c1c1c1 0,#a5a5a5 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c1c1c1',endColorstr='#a5a5a5',GradientType=0);border-left:1px solid #a5a5a5;border-bottom:1px solid #a5a5a5;color:#5f5f5f;text-shadow:0 1px 1px #fff;font-size:11px;font-weight:bold;text-align:center}
+.friendsByInterests .top .average.link span.pointer{cursor:pointer}
+.friendsByInterests .top .average.link.waiting span{color:#000}
+.friendsByInterests .top.friend span.friend{text-decoration:none;cursor:auto;font-weight:bold;color:#000}
+.friendsByInterests .top.interest span.interest{text-decoration:none;cursor:auto;font-weight:bold;color:#000}
+.friendsByInterests .top.no_interest span.interest{display:none}
+.friendsByInterests .top.no_interest s{display:none}
+.friendsByInterests .list{border:1px solid #ccc;border-top:0;margin-bottom:10px;border-left:0;border-bottom:0}
+.friendsByInterests .list .item{background:#e8e8e8;height:30px;position:relative;padding:0 58px 0 31px}
+.friendsByInterests .list .item:nth-child(odd){background:#fff}
+.friendsByInterests .list.cffriend .item small{color:#777}
+.friendsByInterests .list .userPic{width:30px;height:30px;overflow:hidden;position:absolute;top:0;left:0;filter:alpha(opacity=90);opacity:.9}
+.friendsByInterests .list .userPic img{background-position:0 0;width:30px;height:30px;border:0}
+.friendsByInterests .list .userPic img.coverBG {background-size:cover !important;}
+.friendsByInterests .list .name{height:29px;line-height:28px;display:inline-block;padding:0 0 0 8px;margin-left:-1px}
+.friendsByInterests .item:last-child .name,.friendsByInterests .item:last-child .status{border-bottom:1px solid #ccc;height:29px}
+.friendsByInterests .list .name a{color:#007;text-decoration:underline;display:inline-block;height:30px;width:153px;position:relative;overflow:hidden}
+.friendsByInterests .list .name a:hover{color:#f60;text-decoration:none}
+.friendsByInterests .list .status{background:#e8e8e8;width:48px;height:30px;color:#333;line-height:20px;text-align:center;position:absolute;top:0;right:0;border-left:1px solid #d0d0d0}
+.friendsByInterests .list .item:nth-child(odd) .status{background:#fff;border-left:1px solid #e5e5e5}
+.friendsByInterests .list .status div {background:url(/images/icons/123sprite.png?v=20130819) no-repeat 0px 0px;}
+.friendsByInterests .list .status .watched{background-position: -212px -1px;width:24px;height:19px;overflow:hidden;margin:5px auto 0 auto}
+.friendsByInterests .list .status .fav{background-position: -267px -34px;width:26px;height:28px;overflow:hidden;margin:5px auto 0 auto}
+.friendsByInterests .list .status .waiting{background-position: -238px -1px;width:20px;height:20px;margin-left:22px;overflow:hidden;margin:5px auto 0 auto}
+.friendsByInterests .item .status .vote1{background-position: -1px 4px;width:20px;height:25px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .item .status .vote2{background-position: -22px 4px;width:20px;height:25px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .item .status .vote3{background-position: -43px 4px;width:20px;height:25px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .item .status .vote4{background-position: -64px 4px;width:20px;height:25px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .item .status .vote5{background-position: -85px 4px;width:20px;height:25px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .item .status .vote6{background-position: -106px 4px;width:20px;height:25px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .item .status .vote7{background-position: -127px 4px;width:20px;height:25px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .item .status .vote8{background-position: -148px 4px;width:20px;height:25px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .item .status .vote9{background-position: -169px 4px;width:20px;height:25px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .item .status .vote10{background-position: -190px 4px;width:20px;height:25px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .list .status .fav1{background-position: 0 -23px;width:26px;height:28px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .list .status .fav2{background-position: -25px -23px;width:26px;height:28px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .list .status .fav3{background-position: -50px -23px;width:26px;height:28px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .list .status .fav4{background-position: -75px -23px;width:26px;height:28px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .list .status .fav5{background-position: -100px -23px;width:26px;height:28px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .list .status .fav6{background-position: -125px -23px;width:26px;height:28px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .list .status .fav7{background-position: -150px -23px;width:26px;height:28px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .list .status .fav8{background-position: -175px -23px;width:26px;height:28px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .list .status .fav9{background-position: -200px -23px;width:26px;height:28px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .list .status .fav10{background-position: -225px -23px;width:26px;height:28px;overflow:hidden;margin:0 auto 0 auto}
+.friendsByInterests .cffriend{display:none}
+.friendsByInterests.cffriend .cffriend{display:block}
+.friendsByInterests.cffriend .friend{display:none}
+.friendsByInterests .top .link.link_friend{text-decoration:none;cursor:auto;font-weight:bold;color:#525252}
+.friendsByInterests .top .link.link_cffriend{color:#666;margin-left:7px;border-bottom:1px dashed #666;padding-left:2px;text-shadow:none;cursor:pointer}
+.friendsByInterests .top .link.link_cffriend:hover{border-bottom:0}
+.friendsByInterests .top .average.cffriend{display:none}
+.friendsByInterests .list.cffriend{display:none}
+.friendsByInterests.cffriend .top .link.link_friend{color:#454545;border-bottom:1px dashed #454545;padding-left:2px;text-shadow:none;cursor:pointer;font-weight:normal}
+.friendsByInterests.cffriend .top .link.link_friend:hover{border-bottom:0}
+.friendsByInterests.cffriend .top .link.link_cffriend{border-bottom:0;text-decoration:none;cursor:auto;font-weight:bold;color:#454545;text-shadow:0 1px 1px #fff}
+.friendsByInterests.cffriend .top .average.cffriend{display:block}
+.friendsByInterests.cffriend .list.cffriend{display:block}
+.friendsByInterests.closed .switch{background-position:0 -16px}
+.friendsByInterests.closed .list.friend{display:none}
+.friendsByInterests.closed .list.cffriend{display:none}
+.friendsByInterests.closed #table_friend_small{display:block !important}
+.friendsByInterests.closed #table_friend_big{display:none !important}
+.friendsByInterests.no_switch .switch{display:none}
+.friendsByInterests .list .name span{font-family:Arial;color:#777;font-size:10px;display:inline-block;margin:1px 0 0 5px;overflow:hidden;position:absolute;white-space:nowrap}
+.friendsByInterests .list .name i{display:inline-block;position:absolute;right:0;width:15px;height:90%;background-image:-moz-linear-gradient(left,rgba(232,232,232,0),rgba(232,232,232,1));background-image:-webkit-linear-gradient(left,rgba(232,232,232,0),rgba(232,232,232,1));background-image:-o-linear-gradient(left,rgba(232,232,232,0),rgba(232,232,232,1));background-image:-ms-linear-gradient(left,rgba(232,232,232,0),rgba(232,232,232,1));background-image:linear-gradient(left,rgba(232,232,232,0),rgba(232,232,232,1))}
+.friendsByInterests .list .item:nth-child(odd) .name i{display:inline-block;position:absolute;right:0;width:15px;height:90%;background-image:-moz-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));background-image:-webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));background-image:-o-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));background-image:-ms-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));background-image:linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1))}
+.AllFriendsLink{color:#000076;font-size:11px;float:right;position:absolute;right:12px;z-index:2;line-height:13px;padding-top:10px}
+.AllFriendsLink strong{border-bottom:1px dashed #000076;bottom:0;display:inline-block;margin-left:-1px;position:absolute;width:100%}
+.AllFriendsLink:hover{color:#000076}
+.AllFriendsLink:hover strong{border-bottom:0}
+.AllFriendsLink.big #count_all_cfffriend_text, .AllFriendsLink.big #count_all_friend_text{display:none}
+.AllFriendsLink.big #slide_up_cfffriends, .AllFriendsLink.big #slide_up_friends{display:block}
+.AllFriendsLink.closed #count_all_cfffriend_text, .AllFriendsLink.closed #count_all_friend_text{display:block !important}
+.AllFriendsLink.closed #slide_up_cfffriends, .AllFriendsLink.closed #slide_up_friends{display:none !important}
+a.all3.friend{color:#666;font-size:11px}
+.link_to_all_review{display:none}
+#FilmCriticismRandom .criticism *{list-style:none;margin:0;padding:0}
+#FilmCriticismRandom .criticism .grayHeader{font-family:arial;font-size:16px;margin:30px 0}
+#FilmCriticismRandom .criticism .grayHeader a{color:#333;text-decoration:underline}
+#FilmCriticismRandom .criticism .grayHeader span{color:#777}
+#FilmCriticismRandom .criticism .sortsNew{font-family:arial;font-size:12px;border:1px #999 dotted;border-left:0;border-right:0;margin:14px 0 20px -20px;padding:19px 0 12px 20px}
+#FilmCriticismRandom .criticism .sortsNew .type{width:323px;float:left}
+#FilmCriticismRandom .criticism .sortsNew .date{width:232px;float:left}
+#FilmCriticismRandom .criticism .sortsNew .title{color:#777;float:left;padding-right:10px}
+#FilmCriticismRandom .criticism .sortsNew select{width:131px;font-family:tahoma,verdana,'trebuchet ms';font-size:12px;margin-top:-6px;padding:4px 2px}
+#FilmCriticismRandom .criticism .sortsNew .date select{float:right}
+#FilmCriticismRandom .criticism .peopleList{color:#333;font-family:arial;font-size:12px;border-bottom:1px #999 dotted;margin:17px 0 0 -20px;padding:0 0 19px 20px}
+#FilmCriticismRandom .criticism .peopleList .list{width:185px;float:left}
+#FilmCriticismRandom .criticism .peopleList .list li{min-height:1px;position:relative;padding-left:8px}
+#FilmCriticismRandom .criticism .peopleList .list s{background:#333;width:3px;height:3px;overflow:hidden;display:block;position:absolute;top:6px;left:0}
+#FilmCriticismRandom .criticism .peopleList .list a{color:#005;text-decoration:underline}
+#FilmCriticismRandom .criticism .peopleList .list a:hover{text-decoration:none}
+#FilmCriticismRandom .criticism .peopleList .list span{font-weight:bold}
+#FilmCriticismRandom .criticism{font-size:11px;overflow:hidden;margin-left:5px}
+#FilmCriticismRandom .criticism .item{width:270px;float:left;margin:0 0 15px 15px;height:230px}
+#FilmCriticismRandom .criticism .item a{color:#005;text-decoration:underline}
+#FilmCriticismRandom .criticism .top{background:url(/images/icons/criticism.png);height:82px;position:relative}
+#FilmCriticismRandom .criticism .positive .top{background-position:0 -123px}
+#FilmCriticismRandom .criticism .negative .top{background-position:0 -40px}
+#FilmCriticismRandom .criticism .top .name{z-index:2;margin:-68px 0 0 60px;font-family:Tahoma;font-size:13px;color:#333;text-decoration:none !important}
+#FilmCriticismRandom .criticism .top .name a{font-family:Tahoma,arial;font-size:13px;color:#333;text-decoration:none !important}
+#FilmCriticismRandom .criticism .top .subject{z-index:2;margin-bottom:6px;padding:2px 10px 0 60px}
+#FilmCriticismRandom .criticism .top .subject a{font-family:Tahoma,arial;font-size:11px;color:#333;text-decoration:none !important}
+#FilmCriticismRandom .criticism .top .date{font-size:10px;padding-left:60px}
+#FilmCriticismRandom .criticism .top .pic{position:absolute;top:11px;left:10px}
+#FilmCriticismRandom .criticism .top .pic img{width:39px;height:39px;border:1px #fff solid}
+#FilmCriticismRandom .criticism .top .link{width:100%;height:100%;position:absolute;top:0;left:0}
+#FilmCriticismRandom .criticism .top .link a{width:100%;height:100%;display:block}
+#FilmCriticismRandom .criticism .descr{background:url(/images/icons/criticism.png);font-size:12px;font-family:arial;position:relative;border-bottom:1px solid;padding:8px 10px 9px 60px}
+#FilmCriticismRandom .criticism .positive .descr{background-position:-827px 0;border-color:#60b730}
+#FilmCriticismRandom .criticism .negative .descr{background-position:-556px 0;border-color:#e04931}
+#FilmCriticismRandom .criticism .descr p{margin-bottom:5px;height:120px;overflow:hidden;text-overflow:ellipsis}
+#FilmCriticismRandom .criticism .descr p a{color:#333;text-decoration:none;font-size:11px;font-family:Tahoma,arial;line-height:15px}
+#FilmCriticismRandom .criticism .descr p a:hover{text-decoration:underline}
+#FilmCriticismRandom .criticism .descr .fullText{font-size:11px;float:left;margin-right:7px}
+#FilmCriticismRandom .criticism .descr .fullText a{color:#005;text-decoration:underline;position:relative;padding-left:17px}
+#FilmCriticismRandom .criticism .descr .fullText s{background:url(/images/icons/criticismFullText.gif);width:12px;height:10px;overflow:hidden;display:block;position:absolute;top:3px;left:0}
+#FilmCriticismRandom .criticism .descr .comm{float:left}
+#FilmCriticismRandom .criticism .descr .comm a{color:#999;font-size:11px;text-decoration:underline;position:relative;padding-left:17px}
+#FilmCriticismRandom .criticism .descr .comm a s{background:url(/images/comm_cloud.gif);width:14px;height:12px;overflow:hidden;display:block;position:absolute;top:0;left:0}
+#FilmCriticismRandom .criticism .descr .hand{background:url(/images/icons/criticism.png);width:30px;height:31px;position:absolute;top:10px;left:15px}
+#FilmCriticismRandom .criticism .positive .descr .hand{background-position:-482px 0}
+#FilmCriticismRandom .criticism .negative .descr .hand{background-position:-513px 0}
+#FilmCriticismRandom .criticism _wide .item{width:auto;float:none;margin-right:0}
+#FilmCriticismRandom .criticism _wide .positive .descr{background-position:-1654px 0}
+#FilmCriticismRandom .criticism _wide .negative .descr{background-position:-1098px 0}
+#FilmCriticismRandom .criticism .add_link{background:#f2f2f2;height:75px;color:#777;margin:21px 0 30px 0;padding:12px 0 0 20px}
+#FilmCriticismRandom .criticism .add_link b{font-size:11px;display:block;margin-bottom:11px}
+#FilmCriticismRandom .criticism .add_link .text{width:327px;color:#333;font-family:tahoma,verdana;font-size:11px;border:1px #777 solid;margin-right:13px;padding:4px 5px 5px 5px}
+#FilmCriticismRandom .criticism .add_link .button{background:#ece9d8;width:159px;height:24px;color:#333;font-family:tahoma,verdana;font-size:11px;border:1px #fff outset;cursor:pointer;padding:4px 0 5px 0}
+#FilmCriticismRandom .navigator{margin:0 !important}
+#FilmCriticismRandom .criticsRatingBlock{border:1px #b1b1b1 solid;margin:20px 0;padding:8px 0 6px 9px}
+#FilmCriticismRandom .criticsRating{width:217px;color:#777;font-family:arial;font-size:11px}
+#FilmCriticismRandom .criticsRating .place{color:#555;display:inline-block;position:relative;margin-bottom:4px}
+#FilmCriticismRandom .criticsRating .ratingBar{background:url(/images/movies/ratingStuff.gif) 0 -12px;height:11px;overflow:hidden;margin-bottom:5px}
+#FilmCriticismRandom .criticsRating .ratingBar div{background:url(/images/movies/ratingStuff.gif);height:11px;overflow:hidden}
+#FilmCriticismRandom .criticsRating .ratingNum{color:#f60;font-family:tahoma,verdana,helvetica;font-size:16px;position:absolute;margin:-30px 0 0 259px}
+#FilmCriticismRandom .criticsRating .ratingNum.gray{color:#777}
+#FilmCriticismRandom .criticsRating .ratingNum .num{font-size:25px}
+#FilmCriticismRandom .criticsRating .ratingNum.less4{font-size:25px}
+#FilmCriticismRandom .criticsRating .sum{position:relative}
+#FilmCriticismRandom .criticsRating .sum a{text-decoration:none}
+#FilmCriticismRandom .criticsRating .sum .el1{color:#2cae00}
+#FilmCriticismRandom .criticsRating .sum .el2{color:#e77500}
+#FilmCriticismRandom .criticsRating .sum .star{font-size:10px;position:absolute;top:1px;right:0;padding-left:11px}
+#FilmCriticismRandom .criticsRating .sum .star s{background:url(/images/movies/ratingStuff.gif) -174px -24px;width:7px;height:6px;overflow:hidden;display:block;position:absolute;top:3px;left:1px}
+#FilmCriticismRandom .criticsRating .about{color:#999;font-family:tahoma,verdana,helvetica;text-decoration:underline;cursor:pointer;position:absolute;margin:-30px 0 0 423px;padding-left:20px}
+#FilmCriticismRandom .criticsRating .about s{background:url(/images/help-vote2.jpg);width:16px;height:16px;overflow:hidden;display:block;position:absolute;top:0;left:0}
+#FilmCriticismRandom .criticsRatingDouble{width:275px;float:left}
+#FilmCriticismRandom .criticsRatingDouble .insider{width:162px}
+#FilmCriticismRandom .criticsRatingDouble .ratingBar{background:url(/images/movies/ratingStuff.gif) 0 -36px}
+#FilmCriticismRandom .criticsRatingDouble .ratingBar div{background:url(/images/movies/ratingStuff.gif) 0 -24px}
+#FilmCriticismRandom .criticsRatingDouble .ratingNum{margin-left:174px}
+#FilmCriticismRandom .criticism .socialBoxShare{width:16px;position:absolute;right:10px;top:7px}
+#FilmCriticismRandom .criticism .socialBoxShare a{background:url(/images/icons/new_soc_icons_sprite.png) no-repeat;width:16px !important;height:16px !important;margin-top:3px;display:block}
+#FilmCriticismRandom .criticism .socialBoxShare a.vk{background-position:0 0}
+#FilmCriticismRandom .criticism .socialBoxShare a.fb{background-position:-17px 0}
+#FilmCriticismRandom .criticism .socialBoxShare a.tw{background-position:-34px 0}
+.list_film_option{padding:10px 0}
+.list_film_option li{list-style:none;width:127px;float:left}
+.feature_posts{width:145px !important;position:relative}
+.numbers{background:url("/images/icons/numbers_circle.png") no-repeat;position:absolute;left:30px;top:20px;display:block;height:21px;width:21px}
+.feature_posts span{margin:5px 0 0 2px}
+.list_option_img{display:block;float:left;padding-right:10px}
+.comm-new{padding-right:5px !important}
+.list_film_option .all{position:relative;top:3px}
+.list_film_option span{position:relative;top:3px}
+.comm-poll-li{width:155px !important}
+.twitnum{background:url("/images/movies/movies_icons.png") no-repeat scroll 5px -555px transparent;display:block;height:45px;width:45px}
+.awardsLargeBlock{right:35px !important; bottom:50px !important;}
+#buttonViewOnline{list-style:none;margin:0px 0 5px 8px;padding:0}
+#buttonViewOnline li{position:relative;float:left;margin:5px 0 10px 13px;padding:0}
+#buttonViewOnline li a{display:block;width:78px;height:41px;color:#666;letter-spacing:1px;font-weight:bold;font-size:10px;padding:0 10px 0 6px;text-transform:uppercase;line-height:24px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;background:-moz-linear-gradient(top,#fdfdfd,#f4f4f4);background:-webkit-gradient(linear,left top,left bottom,from(#fdfdfd),to(#f4f4f4));filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#fdfdfd,endColorstr=#f4f4f4,GradientType=0);zoom:1;background:linear-gradient(top,#fdfdfd,#f4f4f4)}
+#buttonViewOnline.fourItem li a{width:105px}
+#buttonViewOnline li a b{display:block;color:#000;font-weight:bold;font-size:12px;text-transform:lowercase;letter-spacing:0;line-height:5px}
+#buttonViewOnline li span{display:block;border-bottom:5px solid transparent;border-top:5px solid transparent;font-size:0;right:8px;top:17px;height:0;line-height:0;position:absolute;width:0;cursor:pointer}
+#buttonViewOnline #now a{border:2px solid #0e4e8f}
+#buttonViewOnline #now span{border-left:9px solid #0e4e8f}
+#buttonViewOnline #now a b{font-size:12px}
+#buttonViewOnline #ayyo a{border:2px solid #ffc000}
+#buttonViewOnline #ayyo span{border-left:9px solid #ffc000}
+#buttonViewOnline #ivi a{border:2px solid #fc104c}
+#buttonViewOnline #ivi span{border-left:9px solid #fc104c}
+#buttonViewOnline #zoomby a{border:2px solid #0070e6}
+#buttonViewOnline #zoomby span{border-left:9px solid #0070e6}
+#buttonViewOnline #rutube a{border:2px solid #1b1b1b}
+#buttonViewOnline #rutube span{border-left:9px solid #1b1b1b}
+#buttonViewOnline #yotaplay a{border:2px solid #00aeff}
+#buttonViewOnline #yotaplay span{border-left:9px solid #00aeff}
+#buttonViewOnline #zabava a{border:2px solid #c0c}
+#buttonViewOnline #zabava span{border-left:9px solid #c0c}
+#buttonViewOnline #tvzavr a{border:2px solid #495eff}
+#buttonViewOnline #tvzavr span{border-left:9px solid #495eff}
+#buttonViewOnline #megogo a{border:2px solid #333}
+#buttonViewOnline #megogo span{border-left:9px solid #333}
+#buttonViewOnline #tvigle a{border:2px solid #f60}
+#buttonViewOnline #tvigle span{border-left:9px solid #f60}
+.vod_series_list{margin:0;padding:0;width:200px;list-style-type:none;float:left;overflow:auto}
+.vod_series_list li s{color:#fff;text-decoration:none;padding:5px;display:block;font-size:12px;cursor:pointer}
+.vod_series_list li.odd s{background:#0a0a0a}
+.vod_series_list li s:hover{background:#222}
+.vod_series_list li.active_episode s{color:#fff;background:#333}
+#viewFilmInfoWrapper{position:relative;background-color:#f2f2f2;width:100%}
+#viewFilmInfoWrapper #photoInfoTable{width:850px;float:left}
+#viewFilmInfoWrapper #headerFilm{width:620px;padding:20px 20px 20px 15px;position:relative}
+#viewFilmInfoWrapper .country_num2{width:600px !important;padding:20px 40px 20px 15px !important}
+#viewFilmInfoWrapper .country_num3{width:575px !important;padding:20px 65px 20px 15px !important}
+#viewFilmInfoWrapper .country_num4{width:550px !important;padding:20px 90px 20px 15px !important}
+#viewFilmInfoWrapper .country_num5{width:525px !important;padding:20px 115px 20px 15px !important}
+#viewFilmInfoWrapper .country_num6{width:500px !important;padding:20px 140px 20px 15px !important}
+#viewFilmInfoWrapper .country_num7{width:475px !important;padding:20px 165px 20px 15px !important}
+#viewFilmInfoWrapper .country_num8 .movieFlags,#viewFilmInfoWrapper .country_num9 .movieFlags,#viewFilmInfoWrapper .country_num10 .movieFlags,#viewFilmInfoWrapper .country_num11 .movieFlags,#viewFilmInfoWrapper .country_num12 .movieFlags,#viewFilmInfoWrapper .country_num13 .movieFlags,#viewFilmInfoWrapper .country_num14 .movieFlags,#viewFilmInfoWrapper .country_num15 .movieFlags,#viewFilmInfoWrapper .country_num16 .movieFlags,#viewFilmInfoWrapper .country_num17 .movieFlags,#viewFilmInfoWrapper .country_num18 .movieFlags,#viewFilmInfoWrapper .country_num19 .movieFlags,#viewFilmInfoWrapper .country_num20 .movieFlags,#viewFilmInfoWrapper .country_num21 .movieFlags,#viewFilmInfoWrapper .country_num22 .movieFlags,#viewFilmInfoWrapper .country_num23 .movieFlags,#viewFilmInfoWrapper .country_num24 .movieFlags,#viewFilmInfoWrapper .country_num25 .movieFlags,#viewFilmInfoWrapper .country_num26 .movieFlags,#viewFilmInfoWrapper .country_num27 .movieFlags,#viewFilmInfoWrapper .country_num28 .movieFlags{width:200px}
+#viewFilmInfoWrapper .country_num8,#viewFilmInfoWrapper .country_num9,#viewFilmInfoWrapper .country_num10,#viewFilmInfoWrapper .country_num11,#viewFilmInfoWrapper .country_num12,#viewFilmInfoWrapper .country_num13,#viewFilmInfoWrapper .country_num14,#viewFilmInfoWrapper .country_num15,#viewFilmInfoWrapper .country_num16,#viewFilmInfoWrapper .country_num17,#viewFilmInfoWrapper .country_num18,#viewFilmInfoWrapper .country_num19,#viewFilmInfoWrapper .country_num20,#viewFilmInfoWrapper .country_num21,#viewFilmInfoWrapper .country_num22,#viewFilmInfoWrapper .country_num23,#viewFilmInfoWrapper .country_num24,#viewFilmInfoWrapper .country_num25,#viewFilmInfoWrapper .country_num26,#viewFilmInfoWrapper .country_num27,#viewFilmInfoWrapper .country_num28{width:420px !important;padding:20px 220px 20px 15px !important}
+#viewFilmInfoWrapper #headerFilm h1{margin:0;padding:0}
+#viewFilmInfoWrapper #headerFilm h1 span{white-space:nowrap}
+#viewFilmInfoWrapper #headerFilm>span{color:#666;font-size:13px}
+#viewFilmInfoWrapper #headerFilm .movieFlags{position:absolute;top:31px;right:0}
+#viewFilmInfoWrapper #photoBlock{float:left;position:relative;font-size:11px;}
+#viewFilmInfoWrapper #photoBlock {width:210px;padding:0 0 30px 0}
+#viewFilmInfoWrapper .MyKP_Folder_filmPage .block_add.extended{margin-left:-16px;width:137px}
+#viewFilmInfoWrapper .MyKP_Folder_filmPage .block_add.extended .folders{width:117px}
+#viewFilmInfoWrapper .MyKP_Folder_filmPage .block_add.extended .select .button{width:100px}
+#viewFilmInfoWrapper .MyKP_Folder_filmPage .block_add.extended .select .button b{width:100px}
+#viewFilmInfoWrapper #photoBlock .MyKP_Folder_filmPage .block_add.extended{width:185px;margin-left:15px}
+#viewFilmInfoWrapper #photoBlock .MyKP_Folder_filmPage .block_add.extended .folders{width:159px}
+#viewFilmInfoWrapper #photoBlock .MyKP_Folder_filmPage .block_add.extended .select .button{width:141px;border-left:1px solid #999}
+#viewFilmInfoWrapper #photoBlock .MyKP_Folder_filmPage .block_add.extended .select .button b{width:141px}
+#viewFilmInfoWrapper #photoBlock .film-img-box{min-height:160px;margin-left:15px;}
+#viewFilmInfoWrapper #photoBlock.originalPoster .film-img-box{margin-left:0;position:relative;left:-12px;min-height:205px}
+#viewFilmInfoWrapper #photoBlock .film-img-box img{border:0}
+#viewFilmInfoWrapper #photoBlock .popupVideo{position:absolute;display:block;width:31px;height:21px;background:url("/images/movies/movies_icons.png") no-repeat scroll -1px -696px transparent;bottom:10px;left:10px;filter:alpha(opacity=80);opacity:.8;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;transition:all .3s ease-in-out;z-index:2}
+
+.film-img-box__soundtrack {
+    background:url("/img/movies_icons_soundtrack.png")  0 0 no-repeat;
+    bottom:10px;
+    display:block;
+    height:21px;
+    right:15px;
+    opacity:.8;
+    position:absolute;
+    transition:all .3s ease-in-out;
+    width:31px;
+    z-index:2;
+}
+.film-img-box__soundtrack:hover {
+    opacity: 1;
+}
+
+#viewFilmInfoWrapper #photoBlock .popupVideo:hover{filter:alpha(opacity=100);opacity:1}
+#viewFilmInfoWrapper #photoBlock .addFolder{position:absolute;display:block;width:33px;height:33px;background:url("/images/movies/movies_icons.png") no-repeat scroll 0 -616px transparent;top:-1px;left:10px;filter:alpha(opacity=80);opacity:.8;z-index:2}
+#viewFilmInfoWrapper #photoBlock .addFolder.active{background:url("/images/movies/movies_icons.png") no-repeat scroll 0 -656px transparent}
+#viewFilmInfoWrapper #photoBlock .addFolder:hover{filter:alpha(opacity=100);opacity:1}
+#viewFilmInfoWrapper #photoBlock .popupBigImage span{background:url("/images/movies/movies_icons.png") no-repeat scroll 0 -730px transparent;filter:alpha(opacity=0);opacity:0;width:62px;height:63px;top:50%;left:50%;margin:-31px 0 0 -31px;position:absolute;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+#viewFilmInfoWrapper #photoBlock .bottom_bg{position:absolute;display:block;width:13px;height:7px;background:url("/images/movies/movies_icons.png") no-repeat scroll -1px -722px transparent;bottom:-7px;left:0}
+@-moz-document url-prefix(){#viewFilmInfoWrapper #photoBlock .bottom_bg{bottom:-4px}
+}
+#viewFilmInfoWrapper #photoBlock .left_bg{position:absolute;display:block;width:7px;height:100%;background:url("/images/movies/shadow_poster.png") repeat-y scroll 0 0 transparent;top:0;left:0}
+#viewFilmInfoWrapper #infoTable{float:left}
+#viewFilmInfoWrapper #infoTable .info{width:465px}
+#viewFilmInfoWrapper #actorList{width:130px;height:100%;text-align:left;float:left;font-size:11px;vertical-align:top;margin:-18px 0 0 0;padding:0 0 0 30px}
+#viewFilmInfoWrapper #actorList a{text-decoration:underline}
+#viewFilmInfoWrapper #actorList li{display:block;margin-bottom:5px}
+#viewFilmInfoWrapper #actorList li a{color:#005;line-height:12px}
+#viewFilmInfoWrapper #actorList li i{color:#999;font-size:10px;font-style:normal;display:block;margin-bottom:5px}
+#viewFilmInfoWrapper #actorList h4{color:#f60;font-weight:100;margin:24px 0 12px 0}
+@-moz-document url-prefix(){#viewFilmInfoWrapper #actorList h4{margin:24px 0 11px 0}
+}
+#viewFilmInfoWrapper #actorList h4 a{color:#f60;font-weight:100}
+#viewFilmInfoWrapper #actorList ul{margin:0;padding:0;list-style:none}
+#viewFilmInfoWrapper .actorListbg{padding-bottom:110px !important}
+#viewFilmInfoWrapper .originalPosterFriend{left:70px !important}
+#viewFilmInfoWrapper #CountdownClockDiv{width:178px !important;margin-left:5px}
+#viewFilmInfoWrapper .buyTicketFilm{background:#dfdfdf;width:63px;height:54px;font-family:arial;text-align:center;position:absolute;margin-bottom:32px;padding:0;left:695px;top:0}
+@-moz-document url-prefix(){#viewFilmInfoWrapper .buyTicketFilm{margin-bottom:32px}
+}
+#viewFilmInfoWrapper .buyTicketFilm .element{background:url(/images/buyTicket.gif) no-repeat 0 -3px;width:63px;height:54px;cursor:pointer}
+#viewFilmInfoWrapper .buyTicketFilm .element:hover{opacity:.7;filter:alpha(opacity=70)}
+#viewFilmInfoWrapper .buyTicketFilm .text1{width:63px;color:#333;font-weight:bold;line-height:12px;display:block;position:absolute;top:3px;left:0}
+#viewFilmInfoWrapper .buyTicketFilm .text2{width:63px;color:#007;text-decoration:underline;display:block;position:absolute;top:33px;left:0}
+#viewFilmInfoWrapper .buyTicketFilm .link{position:absolute;top:0;left:0}
+#viewFilmInfoWrapper .buyTicketFilm .link a{background:url(/images/spacer.gif);width:63px;height:54px;display:block}
+#viewFilmInfoWrapper .info tr{border:0;background:url(/images/movies/dotbgtable.png) left bottom repeat-x}
+#viewFilmInfoWrapper .info td{min-height:14px;vertical-align:top;padding-bottom:9px}
+#viewFilmInfoWrapper .info .type{background:url(/images/sqr-grey.gif) 0 11px no-repeat;color:#f60}
+#viewFilmInfoWrapper #newMenuSub, #viewFilmInfoWrapper #newMenuSub li, #viewFilmInfoWrapper #newMenuSub a {background-color:transparent !important;}
+#viewFilmInfoWrapper #newMenuSub a:hover {background-color:#e6e6e6 !important;}
+#viewFilmInfoWrapper #newMenuSub .sub_nav{background-color:#f2f2f2!important;}
+.await_yes_disable{display:none}
+.await_no_disable{display:none}
+.trivsFactBlooper .triviaBlock{min-height:10px;position:relative;font-size:12px;color:#333}
+.trivsFactBlooper .triviaBlock .loader{background:url(/images/loaders/trivia.gif);width:31px;height:31px;overflow:hidden;position:absolute;top:50%;left:50%;margin:-15px 0 0 -15px;visibility:hidden}
+.trivsFactBlooper .triviaBlock .trivia{visibility:visible;position:relative}
+.trivsFactBlooper .triviaBlock li.trivia{list-style:none;visibility:visible;padding:13px 25px 13px 50px;border-bottom:1px dotted #cacaca;background:url("/images/ul-trivia.gif") no-repeat 25px 14px;margin-left:0;line-height:18px;position:relative}
+.trivsFactBlooper .triviaBlock .triviahover{background-position:25px 14px !important;padding-left:50px !important;margin-left:0 !important;background-color:#fcfcfc;border-top:1px dotted #cacaca}
+.trivsFactBlooper .triviaBlock li.trivia a{color:#005}
+.trivsFactBlooper .triviaBlock .more{padding-left:15px}
+.trivsFactBlooper .triviaBlock .trivia ul{list-style-image:none !important;margin-left:-18px;list-style:disc outside none}
+.trivsFactBlooper .triviaBlock ul.trivia{padding:0 0 20px 0}
+#trivia_blooper.main_line_hiden .btn__show,
+#trivia_fact.main_line_hiden .btn__show,
+#soundtracks_table.main_line_hiden .btn__show {background:url("/images/movies/pls_mns.png") repeat scroll 0 -16px transparent;display:block;height:11px;overflow:hidden;position:absolute;left:555px;margin-top:-13px;width:11px}
+#trivia_blooper .btn__show,
+#trivia_fact .btn__show,
+#soundtracks_table .btn__show {background:url("/images/movies/pls_mns.png") repeat scroll 0 0 transparent;display:block;height:11px;overflow:hidden;position:absolute;left:555px;margin-top:-13px;width:11px}
+#trivia_blooper.main_line a,
+#trivia_fact.main_line a,
+#trailer_block.main_line a,
+#editorials_block.main_line a,
+#soundtracks_table.main_line a {color:#f60}
+#trailer_block.main_line a,
+#editorials_block.main_line a {text-decoration: underline;}
+#trivia_blooper.main_line_hiden,
+#trivia_fact.main_line_hiden,
+#soundtracks_table.main_line_hidden {border-color:#777 !important}
+#trivia_blooper.main_line_hiden a,
+#trivia_fact.main_line_hiden a,
+#soundtracks_table.main_line_hiden a {color:#777;font-weight:normal;text-decoration:underline}
+#soundtracks_body .yandex-album {
+    margin-bottom: 15px;
+    margin-right: 0;
+    margin-top: 0;
+    overflow: hidden;
+}
+#soundtracks_body .yandex-album__iframe {
+    height: 290px;
+    width: 555px;
+    margin-top: 15px;
+}
+#soundtracks_body .yandex-album__link-text {
+}
+#soundtracks_body .yandex-album__link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: #777;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    margin-right: 30px;
+}
+#trivia_blooper.main_line_hiden a:hover,#trivia_fact.main_line_hiden a:hover{text-decoration:none}
+.trivsFactBlooper .addToTrivia{margin:0 0 0 -6px !important;padding:0;position:relative;list-style:none outside none !important}
+.trivsFactBlooper .addToTrivia li{border:1px solid #dadada;float:left;height:16px;margin-left:6px;padding:1px;width:16px}
+.trivsFactBlooper .addToTrivia li *{background:url("/images/addTo.gif") repeat scroll 0 0 transparent;cursor:pointer;display:block;height:16px;overflow:hidden;width:16px}
+.trivsFactBlooper .addToTrivia .icon{border:0;width:20px;height:20px;margin-top:-1px}
+.trivsFactBlooper .addToTrivia .icon *{background:url("/images/icons/sprite_trivi.png") repeat scroll 86px 0 transparent;width:20px;height:20px}
+.trivsFactBlooper .addToTrivia .lj *{background-position:0 0}
+.trivsFactBlooper .addToTrivia .vk *{background-position:-17px 0}
+.trivsFactBlooper .addToTrivia .fb *{background-position:-34px 0}
+.trivsFactBlooper .addToTrivia .tw *{background-position:-51px 0}
+.trivsFactBlooper .addToTrivia li:hover{opacity:1}
+.trivsFactBlooper .link_edit_trivia_box{display:none;padding-left:22px;left:560px;top:5px;position:absolute;z-index:999;height:100%;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;transition:all .3s ease-in-out;white-space:nowrap;min-width:118px}
+.trivsFactBlooper .link_edit_trivia{display:block;height:35px;background-color:#fff;box-shadow:0 1px 3px #404040;-webkit-box-shadow:0 1px 3px #404040;-moz-box-shadow:0 1px 3px #404040;padding:10px}
+.contentBlock4 .link_edit_trivia{height:auto !important;}
+.trivsFactBlooper .triviaBlock li.trivia:hover .link_edit_trivia_box{display:block}
+.trivsFactBlooper .link_edit_trivia:hover{display:block}
+.trivsFactBlooper .triangle{background:url("/images/icons/triangle.png") repeat scroll 0 0 transparent;display:block;height:14px;left:14px;position:absolute;top:21px;width:8px}
+.contentBlock4 .triangle{top:13px !important;}
+.trivsFactBlooper .contains_spoiler.hide{display:none}
+.trivsFactBlooper .report_error,.contains_spoiler{font-size:10px;color:#afafaf !important;position:relative;text-transform:uppercase;text-decoration:none;padding-left:10px;margin-top:2px;display:inline-block}
+.trivsFactBlooper .contains_spoiler{padding-left:11px;margin:0 9px 0 1px}
+.link_edit_trivia a:hover{color:#333 !important}
+.trivsFactBlooper .contains_spoiler i{background:url("/images/icons/sprite_trivi.png") repeat scroll -17px 0 transparent;display:block;width:10px;height:10px;position:absolute;left:0;top:5px}
+.trivsFactBlooper .report_error i{background:url("/images/icons/sprite_trivi.png") repeat scroll -8px -2px transparent;display:block;width:7px;height:7px;position:absolute;left:0;top:6px}
+.trivsFactBlooper .add_spoiler,.attention_spoiler{list-style:none;background:0;padding-left:10px;position:relative}
+.trivsFactBlooper .add_spoiler{border:none !important}
+.trivsFactBlooper .add_spoiler a{font-size:12px;color:#666 !important;margin:15px 15px 5px 15px;display:inline-block;text-decoration:underline}
+.trivsFactBlooper .add_spoiler a:hover{text-decoration:none}
+.trivsFactBlooper .add_spoiler a.plus_spoiler{background:url("/images/icons/sprite_trivi.png") no-repeat scroll -26px -2px transparent;display:inline-block;height:11px;overflow:hidden;position:relative;width:11px;top:10px;margin-left:-15px}
+.contentBlock1 .trivsFactBlooper .add_spoiler a:after{content:"";background:url("/images/icons/sprite_trivi.png") no-repeat scroll -26px -2px transparent;display:inline-block;height:11px;overflow:hidden;position:absolute;width:11px;top:21px;margin-left:5px}
+.trivsFactBlooper .first_elem{left:0 !important}
+.trivsFactBlooper .dop_spoiler{display:none}
+.trivsFactBlooper .attention_spoiler{padding:10px 10px 10px 50px;margin-left:0;color:#999;font-size:11px;border-bottom:1px dotted #cacaca}
+.trivsFactBlooper .attention_spoiler i{background:url("/images/icons/sprite_trivi.png") no-repeat scroll -17px 0 transparent;display:block;width:9px;height:9px;position:absolute;left:0;top:12px}
+.popupNewerr{background:url("/images/spacer.gif") repeat scroll 0 0 transparent;border-collapse:collapse;height:100%;display:none;left:0;position:fixed;top:0;width:100%;z-index:1150 !important}
+.popupNewerr .block{background:url("/images/popupNewBottom.gif") repeat-x scroll 0 100% #fff;box-shadow:0 5px 50px #333;margin:0 auto;min-height:1px;padding:18px 27px 27px;position:relative;width:326px}
+.popupNewerr .title{font-size:15px;font-weight:bold;margin:5px 0 13px}
+.popupNewerr .close{background:url("/images/close45.gif") repeat scroll 0 0 transparent;cursor:pointer;height:14px;position:absolute;right:24px;top:21px;width:14px}
+.popupNewerr .text{padding-right:10px}
+.popupNewerr .block .option_box{margin:10px 0 0 -5px}
+.popupNewerr label{margin:0 0 10px 0;font-size:12px;color:#333;display:block}
+.popupNewerr .block .option_box input{vertical-align:top}
+.trivsFactBlooper .report_error_button{margin-top:12px}
+.trivsFactBlooper .triviaBlock .shareError span{display:block !important}
+.trivsFactBlooper .triviaBlock>li{background-position:25px 14px !important;padding-left:50px !important;margin-left:0 !important;background-color:#f0f0f0;color:#000}
+.trivia_text {position:relative; display:inline-block;}
+.trivia_text a.filmH {overflow:hidden; padding-left:37px; height:26px; margin-bottom:12px; color:#020b55; font-size:11px; text-decoration:underline; display:block;white-space: nowrap;width: 450px;}
+.trivia_text a.filmH img {height:26px; width:26px; position:absolute; left:0px; font-size:11px; top:5px;}
+.trivia_text  span {position:absolute; left:37px; color:#666666; top:17px; font-size:11px; display:inline-block;white-space: nowrap;width: 450px;}
+.moreThanOne {margin:0 !important; display:inline-block; border:none !important; padding:0px;}
+.moreThanOne > li {margin:0px 0 0 -50px !important; display:inline-block; border:none !important; padding-bottom:0px !important; width:100%;}
+.moreThanOne > li.first {background:none !important;}
+.report_error_notice{width:320px;height:90px;font-family:tahoma,verdana,arial;font-size:12px;color:#333}
+.error_active,.spoiler_active{color:#999 !important;background-color:#fff !important}
+.error_active:hover,.spoiler_active:hover{background-color:#fcfcfc !important}
+.error_active a,.spoiler_active a{color:#999 !important}
+.error_active_icon{background:url("/images/icons/sprite_trivi.png") repeat scroll -7px -1px transparent;height:10px;display:block;width:10px;position:absolute;right:8px;top:15px}
+.spoiler_active_icon{background:url("/images/icons/sprite_trivi.png") repeat scroll 0 -2px transparent;height:7px;display:block;width:7px;position:absolute;right:10px;top:17px}
+.error_active .link_edit_trivia_box,.spoiler_active .link_edit_trivia_box{display:none !important}
+/* Хлопушка */
+#viewFilmInfoWrapper #photoBlock .downcount{padding-left:0; overflow:hidden;width:120px;}
+#viewFilmInfoWrapper #photoBlock .downcount{padding-left:10px;overflow:visible !important; width:auto !important;}
+#CountdownClockHTML{background:url("/images/movies/covercam.png") no-repeat left top;width:180px;color:#777;font-size:11px;height:33px;padding:50px 0 0 10px;margin-bottom:12px}
+#CountdownClockHTML .timeLeft{width:61px;display:inline-block;text-align:center}
+#CountdownClockHTML .daysLeft{width:61px;display:inline-block;text-align:center;margin-left:-10px}
+#CountdownClockHTML{background:url("/images/movies/covercap.png") no-repeat left top !important;width:180px;color:#777;font-size:11px;height:33px;padding:57px 0 0 25px !important;margin-bottom:12px}
+#CountdownClockHTML .timeLeft{width:90px !important;display:inline-block;text-align:center}
+#CountdownClockHTML .daysLeft{width:90px !important;display:inline-block;text-align:center;margin-left:-25px}
+/* Сериалы */
+.serialBlock{min-height:1px;color:#333;font-family:arial;font-size:12px;position:relative;margin:16px 0 0 25px;padding-bottom:18px}
+.serialBlock *{list-style:none;margin:0;padding:0}
+.serialBlock .opener{background:url(/images/movies/pls_mns.png);width:11px;height:11px;cursor:pointer;overflow:hidden;position:absolute;top:3px;left:-20px}
+.serialBlock .mns{background-position:0 0}
+.serialBlock .left{width:226px;float:left;padding-right:24px}
+.serialBlock .right{width:300px;float:left;margin-top:-57px}
+.serialBlock .status{font-size:13px;margin-bottom:23px}
+.serialBlock .status .value{color:#360}
+.serialBlock .status .next{font-size:11px;display:block;margin-top:4px}
+.serialBlock .eyes{height:75px;font-size:10px;line-height:11px;text-align:center;border-bottom:1px #999 dotted;position:relative;margin-bottom:12px}
+.serialBlock .eyes li{width:54px;position:absolute;top:0;margin-left:-7px}
+.serialBlock .eyes a{color:#777;text-decoration:none}
+.serialBlock .eyes s{background:url(/images/serial/eyeLargeIcons.png);width:40px;height:40px;display:block;margin:0 auto 3px auto}
+.serialBlock .eyes .now{left:0}
+.serialBlock .eyes .will{left:62px}
+.serialBlock .eyes .stop{left:124px}
+.serialBlock .eyes .all{left:186px}
+.serialBlock .eyes .now s{background-position:-1px 0}
+.serialBlock .eyes .will s{background-position:-42px 0}
+.serialBlock .eyes .stop s{background-position:-83px 0}
+.serialBlock .eyes .all s{background-position:-124px 0}
+.serialBlock .eyes .now.activ s{background-position:-1px -42px}
+.serialBlock .eyes .will.activ s{background-position:-42px -42px}
+.serialBlock .eyes .stop.activ s{background-position:-83px -42px}
+.serialBlock .eyes .all.activ s{background-position:-124px -42px}
+.serialBlock .eyes .will.activ a{color:#fc3}
+.serialBlock .eyes .stop.activ a{color:#b40000}
+.serialBlock .eyes .all.activ a{color:#009a00}
+.serialBlock .comingEpisodes{font-size:11px;border-bottom:1px #999 dotted;margin-bottom:13px;padding-bottom:4px}
+.serialBlock .comingEpisodes .title{margin-bottom:11px}
+.serialBlock .comingEpisodes .item{min-height:1px;position:relative;margin-bottom:10px;padding:0 55px 0 36px}
+.serialBlock .comingEpisodes .seriesNum{color:#999;font-style:italic;position:absolute;top:0;left:0}
+.serialBlock .comingEpisodes .days{width:50px;color:#999;font-family:tahoma,verdana;font-size:9px;position:absolute;top:1px;right:0}
+.serialBlock .totalLength{border-bottom:1px #999 dotted;margin-bottom:10px;padding-bottom:13px;display:none}
+.serialBlock .totalLength .total{width:175px;float:left}
+.serialBlock .totalLength .length{width:51px;float:left}
+.serialBlock .totalLength .title{font-size:11px;margin-bottom:3px}
+.serialBlock .peopleWatch{font-size:11px;border-bottom:1px #999 dotted;padding:0 30px 4px 0}
+.serialBlock .peopleWatch .title{margin-bottom:8px}
+.serialBlock .peopleWatch .bar{background:#f60;height:7px;text-align:right;margin-bottom:13px}
+.serialBlock .peopleWatch .num{width:30px;color:#f60;text-align:left;display:inline-block;margin:-4px -34px 0 0}
+.serialBlock .checkEpisodes{background:url(/images/serial/arrow.gif) 17px 7px no-repeat;color:#999;font-style:italic;margin-bottom:10px;padding:1px 0 1px 29px}
+.serialBlock .allSeasons{font-size:11px;font-weight:bold;margin-bottom:10px;padding-left:36px}
+.serialBlock .allSeasons .check{position:absolute;margin:1px 0 0 -23px}
+.serialBlock .allSeasons .descr{background:url(/images/serial/borderOr.gif) 0 100% repeat-x;cursor:pointer}
+.serialBlock .seasonList{font-size:11px;border:1px #c3c3c3 solid;border-radius:5px;margin-bottom:10px;padding:16px 0 6px 15px}
+.serialBlock .seasonList legend{color:#333;font-weight:bold;cursor:default;padding:0 3px 0 20px}
+.serialBlock .seasonList legend .check{background:#fff url(/images/serial/legendBg.gif) 100% 9px no-repeat;position:absolute;margin:-3px 0 0 -26px;padding:3px 8px 3px 3px}
+.serialBlock .seasonList legend .descr{display:inline-block;margin-top:-1px}
+.serialBlock .seasonList .item{min-height:1px;cursor:default;display:block;position:relative;margin-left:-15px;padding:5px 55px 5px 60px}
+.serialBlock .seasonList .item.checkedEp{background:#e5faf0 !important}
+.serialBlock .seasonList .item .check{position:absolute;margin:0 0 0 -48px}
+.serialBlock .seasonList .item .num{color:#999;font-style:italic;position:absolute;margin:0 0 0 -25px}
+.serialBlock .seasonList .item .date{width:50px;color:#999;font-family:tahoma,verdana;font-size:9px;position:absolute;top:7px;right:0}
+.serialBlock .seasonList .item:hover{background:#f2f2f2}
+.serialBlock .fullList{font-size:11px;padding-left:13px}
+.serialBlock .fullList a{color:#006;text-decoration:underline}
+.serialBlockClosed{border-bottom:1px #999 dotted;margin-bottom:9px;padding-bottom:13px}
+.serialBlockClosed .status{width:263px;float:left;margin:0}
+.serialBlockClosed .totalLength{width:285px;border:0;float:left;margin:0;padding:0;display:block}
+.serialBlockClosed .serialBlockContent{display:none}
+.serialBlockClosed .mns{background-position:0 -16px !important}
+.cloud-zoom-lens{border:1px solid #ccc;z-index:1 !important}
+
+/* PERSONS.CSS */
+
+.contentBlock4 .info{width:405px}
+.contentBlock4 .info, .contentBlock4 .info *{border-collapse:collapse;margin:0;padding:0}
+.contentBlock4 .info td{width:265px;min-height:14px;color:#333;vertical-align:top;padding:5px 0 6px 0}
+.contentBlock4 .info .type{background:url(/images/sqr-grey.gif) 11px 11px no-repeat;width:110px;color:#f60;padding-left:23px}
+.contentBlock4 .info .birth .zod{position:relative;padding-right:24px}
+.contentBlock4 .info .birth .zod a{position:static !important;right:4px}
+.contentBlock4 .info .birth .zod img{position:absolute;right:4px}
+.contentBlock4 .info .birth .movie_dot{color:#999;padding:0 3px 0 0 !important}
+.contentBlock4 .info a{color:#005;text-decoration:underline}
+.contentBlock4 .info a:hover{color:#f60}
+.contentBlock4 .info img{border:0;position:absolute;margin-top:-3px}
+.contentBlock4 .info img.mpaa{border:0;display:block;margin:2px 5px 0 0}
+.contentBlock4 .activity{width:430px;color:#333;font-family:arial;position:relative;margin:20px;padding-left:105px}
+.contentBlock4 .activity *{margin:0;padding:0}
+.contentBlock4 .activity form{position:absolute;left:0}
+.contentBlock4 .activity b,.activity i,.activity select,.activity input{display:block;margin-bottom:5px}
+.contentBlock4 .activity b{font-size:12px;margin-top:10px}
+.contentBlock4 .activity b.amp{margin-top:0}
+.contentBlock4 .activity i{font-size:10px;font-style:normal}
+.contentBlock4 .activity select{width:97px;font-size:11px;padding:1px 0}
+.contentBlock4 .activity input{width:97px;font-size:11px;margin-top:10px;padding:1px 0 2px 0}
+.contentBlock4 .activity .rate{font-size:12px;position:relative;padding:10px 0 0 18px}
+.contentBlock4 .activity .rate b{color:#999;font-weight:normal;display:inline}
+.contentBlock4 .activity .rate a{color:#f60;text-decoration:underline}
+.contentBlock4 .activity .rate a:hover{text-decoration:none}
+.contentBlock4 .activity .rate div{position:absolute;top:15px;left:183px}
+.contentBlock4 .activity .rate div img{float:left;display:block}
+.contentBlock4 .filmogr{height:140px;position:relative;margin:30px 0 20px 0;padding:15px 0 0 148px}
+.contentBlock4 .filmogr *{color:#333;font-family:arial;margin:0;padding:0}
+.contentBlock4 .filmogr form{width:120px;font-size:12px;position:absolute;top:0;left:20px}
+.contentBlock4 .filmogr b,.filmogr i,.filmogr span,.filmogr select,.filmogr input{display:block}
+.contentBlock4 .filmogr i{font-size:10px;font-style:normal}
+.contentBlock4 .filmogr p{position:relative}
+.contentBlock4 .filmogr p i{position:absolute;top:2px;left:-16px}
+.contentBlock4 .filmogr .from i{left:-13px}
+.contentBlock4 .filmogr span{white-space:nowrap;position:absolute;top:0;left:137px}
+.contentBlock4 .filmogr u{color:#999;text-decoration:none}
+.contentBlock4 .filmogr a{color:#f60;text-decoration:underline}
+.contentBlock4 .filmogr .time{margin:8px 0 3px 0;padding-top:11px}
+.contentBlock4 .filmogr .stars{width:80px;position:absolute;top:5px;left:308px}
+.contentBlock4 .filmogr select{width:97px;font-size:11px;margin:5px 0}
+.contentBlock4 .filmogr input{width:97px;font-size:11px;text-transform:lowercase;margin-top:10px}
+.contentBlock4 .filmogr div{width:80px;position:absolute;bottom:-15px;left:137px}
+.contentBlock4 .filmogr #ajax_star{width:80px;position:absolute;bottom:90px;left:260px}
+.contentBlock4 .filmogr div img{float:left;display:block}
+.contentBlock4 .filmogr #avg_rating{color:#f60;display:inline;font-size:12px}
+.contentBlock4 .filmogr #ajax_star{background:url(/images/loaders/or_large.gif);width:31px;height:31px;position:absolute;top:62px;left:325px}
+.contentBlock4 #career_graph, .contentBlock4 #career_graph>*{bottom:-1px;left:-5px}
+.contentBlock4 .actor_descr, .contentBlock4 .actor_descr *{color:#555;font-family:arial;font-size:12px;position:relative;margin:0;padding:0}
+.contentBlock4 .actor_descr{display:none;margin:8px 0 20px 20px}
+.contentBlock4 .actor_descr .descr{background:#fbfb59;padding:9px 12px}
+.contentBlock4 .actor_descr a{color:#007;text-decoration:underline}
+.contentBlock4 .actor_descr form *{color:#333}
+.contentBlock4 .actor_descr textarea{background:#fbfb59;width:539px;height:64px;border:1px #999 solid;display:block;margin-bottom:5px;padding:8px 7px}
+.contentBlock4 .actor_descr input{background:#f2f2f2;width:100px;font-family:tahoma,verdana,"trebuchet ms";font-size:11px;border:1px #fff outset;padding:3px 0 5px 0}
+.contentBlock4 .actor_descr .save{font-weight:bold;margin-right:1px}
+.contentBlock4 .actor_descr .delete{margin-right:9px}
+.contentBlock4 .actor_descr span{color:#777;font-family:tahoma,verdana,"trebuchet ms";font-size:10px}
+.contentBlock4 .actor_descr .edit_remove{background:#fdfdb4;width:180px;height:16px;overflow:hidden;position:absolute;bottom:-16px;right:0}
+.contentBlock4 .actor_descr .edit_remove a{background:url(/images/movies/film_descr.gif) no-repeat;font-size:10px;position:absolute;top:0;padding-left:14px}
+.contentBlock4 .actor_descr .edit{background-position:0 3px !important;color:#777;left:10px}
+.contentBlock4 .actor_descr .remove{background-position:0 -16px !important;color:#bf3737;right:10px}
+.contentBlock4 .actor_descr .loader{background:url(/images/loaders/333_fff.gif);width:16px;height:16px;display:none;position:absolute;top:0;left:-18px}
+.contentBlock4 .film_menu, .contentBlock4 .film_menu *{list-style:none;margin:0;padding:0}
+.contentBlock4 .film_menu{background:#fff;height:18px;font-size:11px;font-weight:bold;border-top:1px #999 solid;margin-top:20px;padding-left:22px}
+.contentBlock4 .film_menu li{background:#f2f2f2;height:16px;border-bottom:1px #999 solid;float:left;position:relative;margin-top:-1px;padding:2px 7px 0 6px}
+.contentBlock4 .film_menu s{background:#fff url(/images/film_menu_bg.gif) 0 -1px no-repeat;width:2px;height:18px;overflow:hidden;display:block;position:absolute;top:1px;left:-1px}
+.contentBlock4 .film_menu u{background:#fff url(/images/film_menu_bg.gif) 0 -20px no-repeat;width:2px;height:18px;overflow:hidden;display:block;position:absolute;top:1px;right:0}
+.contentBlock4 .film_menu b{color:#f60}
+.contentBlock4 .film_menu a, .contentBlock4 .film_menu a:hover{color:#555}
+.contentBlock4 .film_menu .off, .contentBlock4 .film_menu .off *{color:#999}
+.contentBlock4 .film_menu .gray *, .contentBlock4 .film_menu .gray a:hover *{color:#999 !important;text-decoration:underline}
+.contentBlock4 .film_menu .last a{color:#f60}
+.contentBlock4 .film_menu .last b{color:#555}
+.contentBlock4 .film_menu .last u{right:-1px}
+.contentBlock4 .film_menu_2 li{padding:2px 20px 0 19px}
+.contentBlock4 .actor_list{background:url(/images/bg-lenta.gif) no-repeat 30px 97%;width:260px;height:100%;text-align:right;vertical-align:top;padding-right:10px}
+.contentBlock4 .actor_list a{text-decoration:underline}
+.contentBlock4 .actor_list span{display:block;margin-bottom:2px}
+.contentBlock4 .actor_list span a{color:#005}
+.contentBlock4 .actor_list span i{color:#999;font-size:10px;font-style:normal;display:block;margin-bottom:5px}
+.contentBlock4 .actor_list .title{color:#f60;margin:20px 0}
+.contentBlock4 .actor_list .title a{color:#f60}
+.contentBlock4 .personPageItem{position:relative;padding-left:26px}
+.contentBlock4 .personPageItem .mic{background:url(/images/icons/actorinfo_icons.png) no-repeat -1px 0;width:15px;height:22px;overflow:hidden;display:block;position:absolute;top:3px;left:-25px}
+.contentBlock4 .personPageItem .shortMovie{background:url(/images/icons/actorinfo_icons.png) no-repeat -18px -4px;width:14px;height:14px;overflow:hidden;display:block;position:absolute;top:10px;left:-24px}
+.contentBlock4 .personPageItem .num{position:absolute;top:50%;left:0;margin-top:-8px;padding-top:2px}
+.contentBlock4 .personPageItems{color:#777;font-size:11px;padding-left:3px}
+.contentBlock4 .personPageItems .item{position:relative;margin-bottom:20px;padding-left:26px}
+.contentBlock4 .personPageItems .item.off {display: none}
+.contentBlock4 .personPageItems .item table{width:410px;height:28px;border-collapse:collapse}
+.contentBlock4 .personPageItems .item table td{vertical-align:middle;padding:0}
+.contentBlock4 .personPageItems .name{font-family:arial;font-size:12px;display:block}
+.contentBlock4 .personPageItems .name a{color:#005;text-decoration:underline}
+.contentBlock4 .personPageItems .name a.gray{color:#777}
+.contentBlock4 .personPageItems .name .top250{color:#f60}
+.contentBlock4 .personPageItems .name .price{color:#393}
+.contentBlock4 .personPageItems .name.noRole{padding:7px 0 6px 0}
+.contentBlock4 .personPageItems .role{color:#999}
+.contentBlock4 .personPageItems .role a{color:#999;text-decoration:underline}
+.contentBlock4 .personPageItems .mic{background:url(/images/icons/actorinfo_icons.png) no-repeat -1px 0;width:15px;height:22px;overflow:hidden;display:block;position:absolute;top:3px;left:-25px}
+.contentBlock4 .personPageItems .num{position:absolute;top:50%;left:0;margin-top:-8px;padding-top:2px}
+.contentBlock4 .personPageItems .shortMovie{background:url(/images/icons/actorinfo_icons.png) no-repeat -18px -4px;width:14px;height:14px;overflow:hidden;display:block;position:absolute;top:10px;left:-24px}
+.contentBlock4 .personPageItems .myVote{background:#f60;width:25px;height:19px;color:#fff;font-size:12px;text-align:center;cursor:pointer;overflow:hidden;position:absolute;top:3px;right:32px;padding-top:4px}
+.contentBlock4 .personPageItems .eye{background:url(/images/movies/select.gif) -309px -197px;width:25px;height:23px;cursor:pointer;overflow:hidden;position:absolute;top:3px;right:32px}
+.contentBlock4 .personPageItems .rating{width:37px;font-family:arial;text-align:center;position:absolute;top:0;right:65px}
+.contentBlock4 .personPageItems .rating a{color:#f60;font-size:12px;text-decoration:underline}
+.contentBlock4 .personPageItems .rating span{display:block}
+.contentBlock4 .personPageItems .rating.imdb a{color:#808}
+.contentBlock4 .personPageItems .MyKP_Folder_Select{position:absolute;top:3px;right:0;width:25px !important}
+.contentBlock4 .personPageItems .MyKP_Folder_Select .select{margin-left:0}
+.contentBlock4 .personPageItems .MyKP_Folder_Select .title{background:url(/images/movies/select.gif) -216px -197px !important;width:25px !important;height:23px !important;cursor:pointer;display:block;filter:alpha(opacity=50);opacity:.5;-moz-opacity:.5;-khtml-opacity:.5;padding:0 !important;border:none !important}
+.contentBlock4 .personPageItems .MyKP_Folder_Select_added .MyKP_Folder_Select_dot{margin:0;background:url(/images/movies/select.gif) -270px -107px;width:7px;height:7px;overflow:hidden;position:absolute;top:8px;right:-13px}
+.contentBlock4 .personPageItems .MyKP_Folder_Select_added .title{filter:alpha(opacity=80);opacity:.8;-moz-opacity:.8;-khtml-opacity:.8}
+.contentBlock4 .personPageItems .rating{text-align:right}
+.contentBlock4 .personPageItems .MyKP_Folder_Select .title:hover{filter:alpha(opacity=100);opacity:1;-moz-opacity:1;-khtml-opacity:1}
+.contentBlock4 .personPageItems .selectSmallAct .arrow{filter:alpha(opacity=100);opacity:1;-moz-opacity:1;-khtml-opacity:1}
+.contentBlock4 .personPageItems .selectSmallAct .dot{background:url(/images/movies/select.gif) -270px -107px;width:7px;height:7px;overflow:hidden;position:absolute;top:8px;right:-13px}
+.contentBlock4 .personPageItems .star{background:url(/images/movies/select.gif) -268px -197px;width:25px;height:23px;cursor:pointer;overflow:hidden;position:absolute;top:3px;right:32px}
+.contentBlock4 .personPageItems .star:hover{background-position:-242px -197px}
+.contentBlock4 .personPageItems .starAct{background-position:-242px -197px}
+.contentBlock4 .personPageItems .rateNow{background:#fff;width:127px;border:1px #ccc solid;border-bottom-width:2px;position:absolute;top:3px;right:32px;z-index:5;padding:21px 0 9px 0}
+.contentBlock4 .personPageItems .rateNow .rateNowItem{height:13px;cursor:pointer;overflow:hidden;position:relative;padding:7px 30px 0 19px}
+.contentBlock4 .personPageItems .rateNow .rateNowItem:hover{background:#e5e5e5}
+.contentBlock4 .personPageItems .rateNow .rateNowItemAct{background:#e5e5e5}
+.contentBlock4 .personPageItems .rateNow .stars{background:url(/images/starsSmallList.png);width:70px;height:6px;overflow:hidden}
+.contentBlock4 .personPageItems .rateNow .stars10{background-position:0 0}
+.contentBlock4 .personPageItems .rateNow .stars9{background-position:0 -7px}
+.contentBlock4 .personPageItems .rateNow .stars8{background-position:0 -14px}
+.contentBlock4 .personPageItems .rateNow .stars7{background-position:0 -21px}
+.contentBlock4 .personPageItems .rateNow .stars6{background-position:0 -28px}
+.contentBlock4 .personPageItems .rateNow .stars5{background-position:0 -35px}
+.contentBlock4 .personPageItems .rateNow .stars4{background-position:0 -42px}
+.contentBlock4 .personPageItems .rateNow .stars3{background-position:0 -49px}
+.contentBlock4 .personPageItems .rateNow .stars2{background-position:0 -56px}
+.contentBlock4 .personPageItems .rateNow .stars1{background-position:0 -63px}
+.contentBlock4 .personPageItems .rateNow .voteNum{width:24px;color:#555;font-family:arial;text-align:center;position:absolute;top:3px;right:6px}
+.contentBlock4 .personPageItems .rateNow .rateNowItemAct .voteNum{color:#333;font-weight:bold}
+.contentBlock4 .personPageItems .rateNow .rateNowArrow{background:url(/images/movies/select.gif) -294px -197px;width:14px;height:27px;position:absolute;top:-1px;left:-14px}
+.contentBlock4 .personPageItems .rateNow .seen{height:17px;padding:3px 0 0 19px}
+.contentBlock4 .personPageItems .rateNow .seen .text{color:#555;font-family:arial;font-weight:bold}
+.contentBlock4 .personPageItems .rateNow .seen .eye{background:url(/images/icons/eyeSmall.gif);width:10px;height:9px;overflow:hidden;position:absolute;top:6px;right:13px}
+.contentBlock4 .to_actor_edit, .contentBlock4 .to_actor_edit *{list-style:none;margin:0;padding:0}
+.contentBlock4 .to_actor_edit{height:18px;overflow:hidden;font-size:11px;width:200px;margin-left:175px;overflow:visible;position:relative;top:3px}
+.contentBlock4 .to_actor_edit .to_notec a{background:url("/images/movies/to_friend_lite.gif") no-repeat;background-position:-45px 0;display:block;float:left;height:18px;width:21px;margin:0 !important}
+.contentBlock4 .to_actor_like{margin-right:5px}
+.contentBlock4 .to_actor_edit .to_notec a:hover, .contentBlock4 .to_notec a.notec_act{background-position:-45px -19px;margin:0 !important}
+.contentBlock4 .to_actor_edit .to_notec a:hover{opacity:.5}
+.contentBlock4 .to_notec .notec_act:hover{opacity:1 !important}
+.contentBlock4 .to_actor_edit li{float:left}
+.contentBlock4 .to_actor_edit li a{background:url("/images/movies/to_friend_lite.gif") no-repeat;height:18px;float:left;display:block}
+.contentBlock4 .to_actor_edit .to_actor_like,.to_actor_edit .to_actor_like_Off{width:24px}
+.contentBlock4 .to_actor_edit .to_actor_like a,.to_actor_edit .to_actor_like_Off a{background-position:0 0;width:19px}
+.contentBlock4 .to_actor_edit .el_2 a, .contentBlock4 .to_actor_edit .el_2_Off a{background-position:-20px 0;width:24px}
+.contentBlock4 .to_actor_edit .to_actor_like_Off{filter:alpha(opacity=50);opacity:.5;-moz-opacity:.5;-khtml-opacity:.5}
+.contentBlock4 .to_actor_edit .to_actor_like a:hover, .contentBlock4 .to_actor_edit .active{background-position:0 -19px !important}
+.contentBlock4 .to_actor_edit .to_actor_like a:hover{filter:alpha(opacity=50);opacity:.5;-moz-opacity:.5;-khtml-opacity:.5}
+.contentBlock4 .to_actor_edit .to_actor_like_act:hover{filter:alpha(opacity=100) !important;opacity:1 !important;-moz-opacity:1 !important;-khtml-opacity:1 !important}
+.contentBlock4 .to_actor_edit .loader{background:url(/images/loaders/snake_f60_f2f2f2.gif);width:16px;height:16px;overflow:hidden;margin:0 auto;display:none}
+.contentBlock4 .to_actor_edit .num{width:48px;color:#999;font-size:10px;text-align:center;position:absolute;bottom:-15px;left:-14px}
+.contentBlock4 .to_actor_edit .link{background:url(/images/spacer.gif);color:#aaa;width:85px;text-align:center;white-space:nowrap;display:none;position:absolute;top:-22px;left:-6px;padding-bottom:9px}
+.contentBlock4 .to_actor_edit .link a{background:0;width:auto;height:auto;color:#aaa;text-decoration:underline;float:none;display:inline;position:relative;opacity:1 !important;-moz-opacity:1 !important;-khtml-opacity:1 !important}
+.contentBlock4 .to_actor_edit li:hover .link{display:block}
+.contentBlock4 .to_actor_edit li:hover .link.linkOff{display:none}
+.contentBlock4 #personInstagram.main_line{padding-left:20px}
+.contentBlock4 #personInstagram.main_line a{color:#f60}
+.contentBlock4 #personInstagram.main_line a.slidfirst{display:none}
+.contentBlock4 #personInstagram.main_line_hidden a.slidfirst{text-decoration:underline !important;display:block}
+.contentBlock4 #personInstagram.main_line_hidden{border-color:#777 !important}
+.contentBlock4 #personInstagram.main_line_hidden a{color:#777;font-weight:normal;text-decoration:underline;cursor:pointer !important}
+.contentBlock4 #personInstagram.main_line a.slidplus{display:inline;cursor:default !important}
+.contentBlock4 #personInstagram.main_line_hidden a.slidplus{display:none}
+.contentBlock4 #personInstagram.main_line_hidden a.personInstagramName{display:none}
+.contentBlock4 #personInstagram.main_line_hidden .btn__show{background:url(/images/movies/pls_mns.png) repeat scroll 0 -16px transparent;display:block;height:11px;overflow:hidden;position:absolute;left:554px;margin-top:-13px;width:11px}
+.contentBlock4 #personInstagram .btn__show{background:url(/images/movies/pls_mns.png) repeat scroll 0 0 transparent;display:block;height:11px;overflow:hidden;position:absolute;left:554px;margin-top:-13px;width:11px}
+.contentBlock4 #personInstagram .loader{background:url("/images/instagram_stars/loader.gif") no-repeat;display:block;height:16px;overflow:hidden;position:absolute;left:519px;margin-top:-13px;width:16px;opacity:0;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}
+.contentBlock4 #personInstagram.loading .loader{opacity:1}
+.contentBlock4 .personInstagramName{font-weight:100;text-decoration:underline}
+.contentBlock4 #rg-gallery-instagram{width:575px;top:10px;position:relative}
+.contentBlock4 .rg-loading{background:url(/images/loaders/kp.gif) no-repeat center center;position:absolute;width:612px;height:612px;display:none}
+.contentBlock4 #rg-gallery-instagram .rg-loading{background-color:white;width:100%;height:100%;display:block;z-index:100}
+.contentBlock4 #rg-gallery-instagram .es-carousel-wrapper{position:relative;margin-bottom:20px}
+.contentBlock4 #rg-gallery-instagram .es-carousel{overflow:hidden;height:192px}
+.contentBlock4 #rg-gallery-instagram .es-carousel ul{display:none;padding-left:0;position:relative;left:21px}
+.contentBlock4 #rg-gallery-instagram .es-carousel ul li{height:100%;float:left;display:block}
+.contentBlock4 #rg-gallery-instagram .es-carousel ul li a{display:block;-webkit-touch-callout:none;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.contentBlock4 #rg-gallery-instagram .es-carousel ul li.selected a{border-color:#fff;opacity:1.0}
+.contentBlock4 #rg-gallery-instagram .es-carousel ul li a img{display:block;border:0;height:150px;width:150px;border:5px solid #fff;box-shadow:1px 1px 2px 1px #999}
+.contentBlock4 #rg-gallery-instagram .es-nav span{position:absolute;top:50%;left:-5px;background:transparent url(/images/instagram_stars/sprite_instagram_stars.png) no-repeat -1px 0;width:30px;height:30px;margin-top:-19px;text-indent:-9000px;cursor:pointer;opacity:.8}
+.contentBlock4 #rg-gallery-instagram .es-nav span.es-nav-next{right:-7px;left:auto;background-position:-34px 0}
+.contentBlock4 #rg-gallery-instagram .es-nav span:hover{opacity:1.0}
+.contentBlock4 #rg-gallery-instagram .es-carousel li span{color:#666;font-size:11px;display:inline-block;margin-top:5px}
+.contentBlock4 #rg-gallery-instagram .es-carousel li span i{background:transparent url(/images/instagram_stars/sprite_instagram_stars.png) no-repeat -1px 0;display:inline-block;width:9px;height:8px}
+.big_instagram_actor .addTo{list-style:none outside none;margin:0;padding:0}
+.big_instagram_actor .addTo li{width:16px;height:16px;float:left;margin-right:5px;padding:2px;background:white;opacity:.5;filter:alpha(opacity=50)}
+.big_instagram_actor .addTo li *{background:url(/images/addTo.gif);width:16px;height:16px;cursor:pointer;overflow:hidden;display:block}
+.big_instagram_actor .addTo .lj *{background-position:0 0}
+.big_instagram_actor .addTo .vk *{background-position:-17px 0}
+.big_instagram_actor .addTo .fb *{background-position:-34px 0}
+.big_instagram_actor .addTo .tw *{background-position:-51px 0}
+.big_instagram_actor .addTo li:hover{opacity:1;filter:alpha(opacity=100)}
+.big_instagram_actor{margin-top:15px}
+.big_instagram_actor .soc_link_box{margin-top:19px}
+.big_instagram_actor .original_link_instagram{text-align:right;position:relative;top:-17px;width:400px;left:210px}
+.big_instagram_actor .original_link_instagram span{font-size:11px;color:#999}
+.big_instagram_actor .original_link_instagram a{font-size:12px;color:#999;display:block;text-decoration:underline;margin-top:5px}
+.big_instagram_actor .original_link_instagram a:hover{text-decoration:none}
+.big_instagram_actor .rg-image{box-shadow:0 3px 40px rgba(0,0,0,0.75);overflow:hidden;cursor:pointer}
+.big_instagram_actor .rg-image.with-video{background-image:url(/images/instagram_stars/colored-noise.gif);width:611px !important;height:611px !important}
+.big_instagram_actor .rg-image.with-video:after{content:'';background:url(/images/instagram_stars/play.png) no-repeat center;position:absolute;left:0;top:0;width:612px;height:612px}
+.big_instagram_actor .rg-image span,.big_instagram_actor .rg-image video{display:inline-block;width:612px;height:612px;background:none no-repeat center;-webkit-background-size:100% 100%;background-size:100%}
+.big_instagram_actor .rg-image.with-video video{opacity:.95}
+.big_instagram_actor .rg-caption{font-family:Tahoma;color:white;width:612px;overflow:hidden;position:relative;padding-left:0;margin:15px 0 0 0}
+.big_instagram_actor .rg-caption li{display:inline-block;float:right}
+.big_instagram_actor .rg-caption li:nth-child(2){float:left;max-width:65%}
+.big_instagram_actor .rg-caption p{font-size:11px;margin:0}
+.big_instagram_actor .rg-caption{line-height:15px}
+.big_instagram_actor .instagram_info_det span{margin-left:10px;font-size:11px !important}
+.big_instagram_actor .instagram_info_det a,.big_instagram_actor .rg-caption p a{color:#999;text-decoration:none}
+.big_instagram_actor .rg-caption p a{cursor:pointer;padding-left:5px;text-decoration:underline}
+.big_instagram_actor .instagram_info_det a:hover,.big_instagram_actor .rg-caption p a:hover{text-decoration:underline}
+.big_instagram_actor .instagram_info_det i{background:transparent url(/images/instagram_stars/sprite_instagram_stars.png) no-repeat -1px 0;display:inline-block;width:9px;height:8px}
+.big_instagram_actor .rg-image-nav a{position:absolute;top:280px;background:transparent url(/images/instagram_stars/sprite_instagram_stars.png) no-repeat -1px -62px;width:50px;height:50px;text-indent:-9000px;cursor:pointer}
+.big_instagram_actor .rg-image-nav-prev{left:-60px}
+.big_instagram_actor .rg-image-nav-next{right:-60px;background-position:-52px -62px !important}
+.instagram__date i{background-position:-3px -45px !important;margin-left:3px}
+.instagram__like i{background-position:-46px -46px !important;margin-left:5px}
+.instagram__comm i{background-position:-90px -46px !important;margin-left:5px}
+.add__instagram{font-size:12px;color:#666;margin:-15px 0 0 20px}
+.add__instagram a{font-size:12px;color:#666;text-decoration:underline}
+.add__instagram a:hover{text-decoration:none}
+.contentBlock4 .darkScreen{display:none;background:#000;width:100%;height:100%;position:fixed;top:0;left:0;z-index:1000;opacity:.8;filter:alpha(opacity=80)}
+.big_instagram_actor{display:none;left:50%;position:fixed;width:612px;z-index:1150;top:50%;margin:-350px 0 0 -305px}
+.minsizewin,.minsizewin .rg-image span,.minsizewin .rg-caption,.minsizewin .rg-loading{width:580px !important;height:580px !important}
+.minsizewin .original_link_instagram{left:180px !important}
+.big_instagram_actor .popuprule .block{width:612px !important;height:500px !important;overflow-y:scroll;background:#fff}
+.big_instagram_actor .popuprule .close{top:50% !important;left:50% !important;margin:-260px 0 0 410px}
+.big_instagram_actor .pic_box{width:500px;float:left;padding:40px 0}
+.big_instagram_actor .close_big{background:transparent url(/images/instagram_stars/sprite_instagram_stars.png) no-repeat -66px 7px;cursor:pointer;height:44px;position:absolute;right:10px;top:10px;width:44px}
+.contentBlock4 .to_notec a{background:url("/images/movies/to_friend_lite.gif") no-repeat;background-position:-45px 0;display:block;float:left;height:18px;width:21px;margin:10px 0 0 55px}
+.contentBlock4 .to_notec a:hover,.to_notec a.notec_act{background-position:-45px -19px}
+.contentBlock4 .to_notec a:hover{opacity:.5}
+.contentBlock4 .to_notec .notec_act:hover{opacity:1 !important}
+.contentBlock4 #aprilDrawing{padding:10px 10px 7px 10px;border-bottom:1px dotted #999 !important}
+.contentBlock4 #aprilDrawing #drawingButton{background:url("/images/april_drawing/button.png") no-repeat;width:180px;height:22px;display:inline-block;margin-right:15px}
+.contentBlock4 #aprilDrawing #drawingText{font-size:11px;color:#777;position:relative;top:-7px;text-decoration:none}
+.contentBlock4 .popupDrawing{background:url("/images/spacer.gif") repeat scroll 0 0 transparent;border-collapse:collapse;height:100%;display:none;left:0;position:fixed;top:0;width:100%;z-index:1150 !important}
+.contentBlock4 .popupDrawing .block{background:url("/images/popupNewBottom.gif") repeat-x scroll 0 100% #fff;box-shadow:0 5px 50px #333;margin:0 auto;min-height:1px;padding:18px 27px 47px;position:relative;width:370px}
+.contentBlock4 .popupDrawing .block .requirements{font-size:11px;color:#777;margin:25px 0 0 0}
+.contentBlock4 .popupDrawing .block .label{display:block;font-size:12px;color:#333}
+.contentBlock4 .popupDrawing .title{font-size:15px;font-weight:bold;margin:5px 0 13px}
+.contentBlock4 .popupDrawing .close{background:url("/images/close45.gif") repeat scroll 0 0 transparent;cursor:pointer;height:14px;position:absolute;right:24px;top:21px;width:14px}
+.contentBlock4 .popupDrawing .reportDrawingbutton{margin-top:12px}
+.contentBlock4 .popupDrawing .reportDrawingnotice{width:320px;height:90px;font-family:tahoma,verdana,arial;font-size:12px;color:#333}
+.contentBlock4 .popupDrawing form{background-color:#eee;height:90px;color:#333;font-size:18px;position:relative;margin-top:30px}
+.contentBlock4 .popupDrawing form a{color:#333;font-size:17px;font-weight:100;display:inline-block;margin:30px 0 0 80px;text-decoration:underline}
+.contentBlock4 .popupDrawing form img{position:absolute}
+.contentBlock4 .popupDrawing .buttons{width:370px;height:90px;overflow:hidden;position:absolute;z-index:2}
+.contentBlock4 .popupDrawing .buttons input{height:200px;font-size:200px;display:block;position:absolute;top:0;right:0;opacity:0;filter:alpha(opacity=0);cursor:pointer}
+.contentBlock4 .popupDrawing form a.linkPage{color:#0d54b3;font-size:12px;margin-top:35px}
+.contentBlock4 #aprilDrawingSocial{height:26px;margin:-15px 0 0;position:absolute;left:0;top:43px;width:112px;z-index:10;display:none}
+.contentBlock4 #aprilDrawingSocial div{float:left;padding-right:4px;width:26px}
+.contentBlock4 #aprilDrawingSocial div a{background:url("/images/movies/blogs.gif?20120210") repeat scroll 0 0 transparent;display:block;float:left;height:26px;width:26px}
+.contentBlock4 #aprilDrawingSocial #vk{background-position:-27px 0}
+.contentBlock4 #aprilDrawingSocial #vk:hover{background-position:-27px -27px}
+.contentBlock4 #aprilDrawingSocial #fb{background-position:-54px 0}
+.contentBlock4 #aprilDrawingSocial #fb:hover{background-position:-54px -27px}
+.contentBlock4 #aprilDrawingSocial #tw{background-position:-81px 0}
+.contentBlock4 #aprilDrawingSocial #tw:hover{background-position:-81px -27px}
+.contentBlock4 .personPageItem .shortMovie{background-attachment:scroll;background-clip:border-box;background-color:transparent;background-image:url("/images/movies/shortMovie.gif");background-origin:padding-box;background-position:0 0;background-repeat:repeat;background-size:auto;display:block;height:14px;left:-24px;overflow-x:hidden;overflow-y:hidden;position:absolute;top:8px;width:14px}
+.contentBlock4 .MyKP_Folder_Select .select .list_title,.MyKP_Folder_Select .select .list{left:0 !important}
+.contentBlock4 .MyKP_Folder_Select .select .list_title{z-index:21}
+.contentBlock4 .seen_disabled{color:#999 !important;cursor:default !important;background:none !important}
+.contentBlock4 .seen .text{color:#999 !important;font-weight:normal !important;letter-spacing:.9px}
+.contentBlock4 .rateNowItemAct .text{color:#333 !important;font-weight:bold !important;letter-spacing:.5px}
+.contentBlock4 .seen_disabled .text{font-weight:normal !important;color:#999 !important;letter-spacing:1px}
+.contentBlock4 .sortBlockselect{color:#333;font-family:tahoma,verdana,"trebuchet ms";font-size:11px;text-align:left;position:absolute;right:-7px;margin-top:0 !important}
+.contentBlock4 .sortBlockselect .title{background:url(/images/movies/select.gif) 100% 0;width:128px;height:17px;border:1px #999 solid;border-top:0;border-right:0;display:block;padding:4px 0 0 6px}
+.contentBlock4 .selectGenres{margin:0 8px}
+.contentBlock4 .sortBlockselect *{cursor:pointer}
+.contentBlock4 .sortBlockselect .popup{position:absolute;top:0;left:-1px;display:none;z-index:100}
+.contentBlock4 .sortBlockselect .listTitle{background:url(/images/movies/select.gif) 100% -128px;width:129px;height:18px;color:#fff;border-left:1px #3b5998 solid;overflow:hidden;padding:4px 0 0 6px}
+.contentBlock4 .sortBlockselect .list{background:#fff;width:134px;max-height:340px;border:1px #999 solid;border-top:0;border-bottom-width:2px;overflow-y:auto;padding:0;margin:0}
+.contentBlock4 .sortBlockselect .list li{min-height:1px;position:relative;position:relative;padding:3px 0 3px 20px;cursor:pointer;list-style:none}
+.contentBlock4 .sortBlockselect .list li:hover{background:#e5e5e5}
+.contentBlock4 .sortBlockselect .list li.bold{font-weight:bold !important}
+.contentBlock4 .sortBlockselect .list .act{color:#f60;background:url(/images/movies/bullActiveSelect.png) no-repeat 8px 9px}
+.contentBlock4 .sortBlockselect .list .off, .contentBlock4 .sortBlockselect .list .permoff{color:#999;background:none !important;cursor:default}
+.contentBlock4 .filmvote{margin-left:10px}
+.contentBlock4 .sortselect .title{width:158px !important}
+.contentBlock4 .sortselect .listTitle{width:159px !important}
+.contentBlock4 .sortselect .list{width:164px !important}
+.contentBlock4 .sort_people{position:relative}
+.contentBlock4 .sort_people>div{float:left;position:relative}
+.contentBlock4 .sort_people_name{font-size:12px;color:#333;top:2px;margin-left:20px}
+.contentBlock4 .notdefaultselect{background:url(/images/movies/notdefaultselect.jpg) 100% 0 !important;width:128px;height:17px;border:1px #f60 solid !important;border-top:none !important;border-right:none !important;display:block;padding:4px 0 0 6px;color:#f60}
+.contentBlock4 td.na b{font-weight:normal;color:#777}
+.contentBlock4 .best_serial.awardsLargeBlockP{background:#f2f2f2;width:150px;height:140px;position:absolute;right:190px;margin-top:-75px;}
+.contentBlock4 .best_serial .awardsBlock{margin-top:10px;width:150px;height:120px;text-align:center;border-collapse:collapse;position:absolute;background:#f2f2f2}
+.contentBlock4 .notbest_serial.awardsLargeBlockP{min-width:120px;min-height:123px;position:absolute;bottom:45px;right:50px}
+.contentBlock4 .notbest_serial .awardsBlock{margin-top:10px;width:120px;height:123px;text-align:center;border-collapse:collapse;position:absolute}
+.contentBlock4 .awardsBlock td{padding:0;vertical-align:top}
+.contentBlock4 .awardsBlock a{text-decoration:none;color:#777}
+.contentBlock4 .awardsBlock .item{display:inline;position:relative}
+.contentBlock4 .awardsBlock .item img{border:0;display:inline}
+.contentBlock4 .awardsBlock .item .num{background:url(/images/movies/awardsNumBg.png) 0 -31px;width:33px;height:27px;color:#fff;font-family:tahoma,verdana,"trebuchet ms";font-size:18px;position:absolute;bottom:-6px;right:-15px;padding-top:5px}
+.contentBlock4 .awardsBlock .item .numGold{background-position:0 -61px}
+.contentBlock4 .Berlin{min-height:106px;margin-top:-73px !important}
+.contentBlock4 .awardsBlockBerlin{height:106px}
+.contentBlock4 .Cannes{min-height:102px;margin-top:-69px !important}
+.contentBlock4 .awardsBlockCannes{height:102px}
+.contentBlock4 .GoldenGlobe{min-height:105px;margin-top:-72px !important}
+.contentBlock4 .awardsBlockGoldenGlobe{height:105px}
+.contentBlock4 .Mmkf{min-height:115px;margin-top:-82px !important}
+.contentBlock4 .awardsBlockMmkf{height:115px}
+.contentBlock4 .Mtv{min-height:107px;margin-top:-74px !important}
+.contentBlock4 .awardsBlockMtv{height:107px}
+.contentBlock4 .Oscar{min-height:123px;margin-top:-90px !important}
+.contentBlock4 .awardsBlockOscar{height:123px}
+.contentBlock4 .Raspberry{min-height:108px;margin-top:-75px !important}
+.contentBlock4 .awardsBlockRaspberry{height:108px}
+.contentBlock4 .Venice{min-height:83px;margin-top:-50px !important}
+.contentBlock4 .awardsBlockVenice{height:83px}
+.contentBlock4 .best_serial .awardsPopup{display:none;background:#fff;width:359px;min-height:123px;color:#474747;font-family:arial;font-size:12px;text-align:left;position:absolute;top:0;right:0;z-index:100;padding:21px 25px 15px 25px;box-shadow:#ccc 0 0 2px 1px;-webkit-box-shadow:#ccc 0 0 2px 1px}
+.contentBlock4 .notbest_serial .awardsPopup{display:none;background:#fff;width:359px;min-height:123px;color:#474747;font-family:arial;font-size:12px;text-align:left;position:absolute;right:-15px;z-index:100;padding:21px 25px 15px 25px;box-shadow:#ccc 0 0 2px 1px;-webkit-box-shadow:#ccc 0 0 2px 1px}
+.contentBlock4 .awardsPopup *{list-style:none;margin:0;padding:0}
+.contentBlock4 .awardsPopup a{color:#474747;text-decoration:underline}
+.contentBlock4 .awardsPopup .list{width:250px}
+.contentBlock4 .awardsPopup .list .title{color:#666;margin:22px 0}
+.contentBlock4 .awardsPopup .list .item{margin-bottom:14px;padding-left:53px}
+.contentBlock4 .awardsPopup .list .link i{font-style:normal;position:absolute}
+.contentBlock4 .awardsPopup .list .link .left{margin-left:-7px}
+.contentBlock4 .awardsPopup .list .link .right{margin-right:-5px}
+.contentBlock4 .awardsPopup .list .row{font-size:11px;margin-bottom:9px;padding-top:1px}
+.contentBlock4 .awardsPopup .list .rowNolink{font-size:12px}
+.contentBlock4 .awardsPopup .list .year{width:38px;font-weight:bold;display:inline;position:absolute;margin-left:-53px}
+.contentBlock4 .awardsPopup .main .title{color:#26268b;font-size:18px;margin-top:0}
+.contentBlock4 .awardsPopup .main .title a{color:#26268b;text-decoration:none}
+.contentBlock4 .awardsPopup .main .title a:hover{text-decoration:underline}
+.contentBlock4 .awardsPopup .main .link{color:#f60;margin-bottom:2px}
+.contentBlock4 .awardsPopup .main .link a{color:#f60}
+.contentBlock4 .awardsPopup .main .row{color:#f60}
+.contentBlock4 .awardsPopup .main .year{color:#f60}
+.contentBlock4 .awardsPopup .main .year a{color:#f60}
+.contentBlock4 .awardsPopup .more{color:#f60;padding:5px 0 6px 53px}
+.contentBlock4 .awardsPopup .more a{color:#f60;text-decoration:underline}
+.contentBlock4 .awardsPopup .pic{width:120px;text-align:center;position:absolute;top:0;right:15px;margin-top:10px}
+.contentBlock4 .to_notec a{background:url("/images/movies/to_friend_lite.gif") no-repeat;background-position:-45px 0;display:block;float:left;height:18px;width:21px;margin:10px 0 0 55px}
+.contentBlock4 .to_notec a:hover,.to_notec a.notec_act{background-position:-45px -19px}
+.contentBlock4 .to_notec a:hover{opacity:.5}
+.contentBlock4 .to_notec .notec_act:hover{opacity:1 !important}
+.contentBlock4 #block_right{margin-top:-25px}
+.contentBlock4 #viewPeopleInfoWrapper{position:relative;background:#f2f2f2;width:100%;margin-bottom:24px}
+.contentBlock4 #viewPeopleInfoWrapper #photoInfoTable{width:850px;float:left;border-bottom:1px solid #ccc}
+.contentBlock4 #viewPeopleInfoWrapper #headerPeople{width:620px;padding:20px 20px 20px 15px;position:relative}
+.contentBlock4 #viewPeopleInfoWrapper #headerPeople h1{margin:0;padding:0}
+.contentBlock4 #viewPeopleInfoWrapper #headerPeople h1 span{white-space:nowrap}
+.contentBlock4 #viewPeopleInfoWrapper #headerPeople>span{color:#666;font-size:13px;display:inline-block;margin-top:1px}
+.contentBlock4 #viewPeopleInfoWrapper #headerPeople .movieFlags{position:absolute;top:31px;right:0}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock{float:left;padding:0 5px 20px 16px;position:relative;font-size:11px;width:140px}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock.originalPoster{width:165px !important}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock.originalPoster .film-img-box img{width:180px;position:relative;left:-28px}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock .film-img-box{min-height:160px}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock .film-img-box img{border:0}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock .popupVideo{position:absolute;display:block;width:31px;height:21px;background:url("/images/movies/movies_icons.png") no-repeat scroll -1px -696px transparent;bottom:10px;left:10px;filter:alpha(opacity=80);opacity:.8;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock .popupVideo:hover{filter:alpha(opacity=100);opacity:1}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock .addFolder{position:absolute;display:block;width:33px;height:33px;background:url("/images/movies/movies_icons.png") no-repeat scroll 0 -616px transparent;top:-1px;left:10px;filter:alpha(opacity=80);opacity:.8}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock .addFolder.active{background:url("/images/movies/movies_icons.png") no-repeat scroll 0 -656px transparent}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock .addFolder:hover{filter:alpha(opacity=100);opacity:1}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock .popupBigImage span{background:url("/images/movies/movies_icons.png") no-repeat scroll 0 -730px transparent;filter:alpha(opacity=0);opacity:0;width:62px;height:63px;top:50%;left:50%;margin:-31px 0 0 -51px;position:absolute;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock .bottom_bg{position:absolute;display:block;width:13px;height:7px;background:url("/images/movies/movies_icons.png") no-repeat scroll -1px -722px transparent;bottom:-7px;left:-28px}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock .left_bg{position:absolute;display:block;width:7px;height:100%;background:url("/images/movies/shadow_poster.png") repeat-y scroll 0 0 transparent;top:0;left:-28px;z-index:2}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock .downcount{padding-left:0}
+.contentBlock4 #viewPeopleInfoWrapper #photoBlock.originalPoster .downcount{padding-left:10px}
+.contentBlock4 #viewPeopleInfoWrapper #infoTable{float:left;padding-bottom:30px}
+.contentBlock4 #viewPeopleInfoWrapper #infoTable .info{width:470px;margin-bottom:30px}
+.contentBlock4 #viewPeopleInfoWrapper #infoTable .info td a{position:relative;z-index:1}
+.contentBlock4 #viewPeopleInfoWrapper #infoTable .info td.female{position:relative;}
+.contentBlock4 #viewPeopleInfoWrapper #infoTable .info td.female span{position:relative; z-index:3;}
+.contentBlock4 #viewPeopleInfoWrapper #infoTable.originalPoster .info{width:445px}
+.contentBlock4 #viewPeopleInfoWrapper #infoTable .block_add.extended{width:159px;margin-top:-5px !important;min-height:20px !important}
+.contentBlock4 #viewPeopleInfoWrapper #infoTable .block_add.extended .select .button{width:120px;border-left:1px solid #999}
+.contentBlock4 #viewPeopleInfoWrapper #infoTable .block_add.extended .select .button b{width:120px}
+.contentBlock4 #viewPeopleInfoWrapper .block_add.extended .select .button.active{border-left:1px solid #3b5998 !important}
+.contentBlock4 #viewPeopleInfoWrapper #BestFilmList{width:170px;height:auto;text-align:left;float:left;font-size:11px;vertical-align:top;margin:-18px 0 0 0;padding:0 0 20px 30px}
+.contentBlock4 #viewPeopleInfoWrapper .actorListPadding{padding:0 0 150px 30px !important}
+.contentBlock4 #viewPeopleInfoWrapper #BestFilmList a{text-decoration:underline}
+.contentBlock4 #viewPeopleInfoWrapper #BestFilmList li{display:block;margin-bottom:5px}
+.contentBlock4 #viewPeopleInfoWrapper #BestFilmList li a{color:#005;line-height:12px}
+.contentBlock4 #viewPeopleInfoWrapper #BestFilmList li i{color:#999;font-size:10px;font-style:normal;display:block;margin-bottom:5px}
+.contentBlock4 #viewPeopleInfoWrapper #BestFilmList h4{color:#f60;font-weight:100;margin:23px 0 12px 0}
+.contentBlock4 @-moz-document url-prefix(){#viewPeopleInfoWrapper #BestFilmList h4{margin:23px 0 11px 0}
+                   .contentBlock4 }
+.contentBlock4 #viewPeopleInfoWrapper #BestFilmList h4 a{color:#f60;font-weight:100}
+.contentBlock4 #viewPeopleInfoWrapper #BestFilmList ul{margin:0;padding:0;list-style:none}
+.contentBlock4 #viewPeopleInfoWrapper .BestFilmListbg{padding-bottom:110px !important}
+.contentBlock4 #viewPeopleInfoWrapper .originalPosterFriend{left:70px !important}
+.contentBlock4 #viewPeopleInfoWrapper .originalPoster #CountdownClockDiv{width:178px !important;margin-left:5px}
+.contentBlock4 #viewPeopleInfoWrapper #newMenuSub{margin-top:1px}
+.contentBlock4 #viewPeopleInfoWrapper #newMenuSub li{font-size:11px}
+.contentBlock4 #viewPeopleInfoWrapper .info tr{border:0;background:url(/images/movies/dotbgtable.png) bottom repeat-x}
+.contentBlock4 #viewPeopleInfoWrapper .info td{min-height:14px;vertical-align:top;padding-bottom:9px}
+.contentBlock4 #viewPeopleInfoWrapper .info .type{background:url(/images/sqr-grey.gif) 0 11px no-repeat;color:#f60;width:150px}
+.contentBlock4 .block_left_padtop{margin-top:-20px}
+.contentBlock4 .ipad_report{position:relative;top:3px}
+.contentBlock4 .peopleInfo{margin-top:10px}
+.contentBlock4 .specializationBox .vote_widget .myVote{position:relative !important;top:auto !important;right:auto !important}
+.contentBlock4 .specializationBox .vote_widget .star{position:relative !important;top:auto !important;right:auto !important}
+.contentBlock4 .specializationBox .myVote,.contentBlock4 .specializationBox .star, .contentBlock4 .specializationBox .bigEye{width:25px}
+.contentBlock4 .specializationBox .shortestselect{float:right;width:30px;position:absolute;top:-3px !important}
+.contentBlock4 .specializationBox .miniVoteDiv{float:right;width:30px;position:absolute;right:28px !important;top:-3px !important}
+.contentBlock4 .specializationBox .rateNow{right:5px !important}
+.contentBlock4 .specializationBox .headersAmplua { width:555px;background: url("/images/bg_main_line.jpg") repeat scroll 0 0 #F2F2F2;border-left: 2px solid #FF6600;font-family: arial,sans-serif;font-size: 12px;font-weight: bold;height: 22px;padding:6px 0 0 20px; color:#FF6600; position:relative; margin:5px 0;}
+.contentBlock4 .specializationBox .headersAmplua.hiddenByBtn {border-left: 2px solid #777; color: #777}
+.contentBlock4 .specializationBox .headersAmplua.hiddenByFilter {display: none}
+.contentBlock4 .specializationBox .headersAmplua.hiddenByBtn .btnAmpluaShow {background: url("/images/movies/pls_mns.png") repeat scroll 0 -16px transparent;display: block;height: 11px;overflow: hidden;position: absolute;right: 10px;top: 8px;width: 11px;}
+.contentBlock4 .specializationBox .headersAmplua.hiddenByBtn span.txtWorks {display: none}
+.contentBlock4 .specializationBox .headersAmplua.hiddenByBtn a.txtWorks {display: inline-block}
+.contentBlock4 .specializationBox .headersAmplua.hiddenByBtn .yearsBox {display: none}
+.contentBlock4 .specializationBox .personPageItems {padding-left:12px;margin:10px 0 0 20px}
+.contentBlock4 .specializationBox .personPageItems.hiddenByBtn {display: none}
+.contentBlock4 .specializationBox .personPageItems.hiddenByFilter {display: none}
+.contentBlock4 .specializationBox .yearsBox {position:absolute; right:30px; top:6px; font-size:10px;}
+.contentBlock4 .specializationBox .yearsBox a {font-size:10px; font-weight:100;}
+.contentBlock4 .specializationBox  a.txtWorks {display:none; color: #777;font-weight: normal;text-decoration: underline;}
+.contentBlock4 .specializationBox .btnAmpluaShow { background: url("/images/movies/pls_mns.png") repeat scroll 0 0px transparent;display: block;height: 11px;overflow: hidden;position: absolute;right: 10px;top: 8px;width: 11px;}
+.contentBlock4 .specializationBox .close .btnAmpluaShow { background: url("/images/movies/pls_mns.png") repeat scroll 0 -16px transparent;display: block;height: 11px;overflow: hidden;position: absolute;right: 10px;top: 8px;width: 11px;}
+.contentBlock4 .specializationBox .close {border-left: 2px solid #777; color:#777;}
+.contentBlock4 .specializationBox .close span.txtWorks {display:none;}
+.contentBlock4 .specializationBox .close a.txtWorks {display:inline-block;}
+.contentBlock4 .specializationBox .close .yearsBox {display:none;}
+.contentBlock4 .vote_widget .myVote {position: relative !important; top: auto !important; right: auto !important; }
+.contentBlock4 .vote_widget .star {position: relative !important; top: auto !important; right: auto !important; }
+.contentBlock4 .myVote, .contentBlock4  .star, .contentBlock4  .bigEye {width:25px !important}
+.contentBlock4 .shortestselect {float:right; width:30px; position:absolute; top: -3px !important;}
+.contentBlock4 .miniVoteDiv {float:right; width:30px; position:absolute; right:28px !important; top: -3px !important;}
+.contentBlock4 .rateNow {right: 5px!important;}
+/* Игра престолов */
+#GOTLightBoxOverlay{position:absolute;overflow:hidden;left:0;top:0;z-index:1250;text-align:center;width:auto;height:13500px;bottom:0;right:0;padding:80px 100px 120px 100px;display:none; cursor:crosshair; background-color:rgba(0,0,0,0.5); cursor:pointer;}
+#GOTLightBoxOverlay.overlay{background-color:rgba(0,0,0,0.5)}
+#GOTLightBox{cursor:crosshair; width:1295px;margin:40px auto 0 auto;font-family:"Arial",sans-serif;z-index:1150;color:#666;background:#fff;box-shadow:#999 0 10px 70px;-webkit-box-shadow:#999 0 10px 70px;-moz-box-shadow:#999 0 10px 70px;position:relative;border-bottom:5px solid #ff7e14}
+#GOTLightBox.width1000 {width:1000px !important; position:absolute; left:50%; margin-left:-500px;}
+#GOTLightBox.width1000 img {width:1000px !important}
+
+/* Микрорецензии */
+.microExportBlock {position: absolute; z-index: 1001; right:-195px; top:0px;}
+.microExportBlock .microExport {background:#f2f2f2 !important; width: 165px !important; position: absolute; left: 0; border-top:3px solid #ff6600;  position:relative; padding:0 10px; box-shadow: 1px 1px 2px #cccccc; -webkit-box-shadow: 1px 1px 2px #cccccc;-moz-box-shadow: -1px 1px 2px #cccccc;}
+.microExportBlock .showMicroBlog {display:block; width:20px; height:20px; background: url(/images/movies/microblogicon.png) -96px -25px no-repeat; margin-left:-195px;}
+.microExportBlock .showMicroBlog span {display:none; width:140px; height:23px; background: url(/images/movies/microblogicon.png) 0px 0px no-repeat;color: #333333;padding-top: 2px;position: absolute;text-align: center;top: -25px; margin-left:-120px;}
+.microExportBlock .showMicroBlog i {display:block; width:20px; height:20px; background:rgba(0, 0, 0, 0.5); margin:20px 0 0 0px; color:#ffffff; font-size:11; text-align:center; position:absolute; font-style:normal; line-height:18px;}
+.microExportBlock a.showMicroBlog:hover span {display:block;}
+.microExportBlock.hide .microExport, .microExportBlock.hide .itemsFriend, .microExportBlock .showMicroBlog {display:none;}
+.microExportBlock .microExport .open_mess_share {padding-bottom:22px !important;}
+.microExportBlock .microExport .title {color: #666666; font-size: 11px; display: block; margin:8px 0px 0px; font-weight:bold; font-family: Tahoma;}
+.microExportBlock .microExport .titleSub {color: #666666; font-size: 10px; display: block; font-weight:100; font-family: Tahoma; margin:3px 0 5px 0;}
+.microExportBlock .microExport .close {position: absolute; top: 6px !important; right: 6px !important;}
+.microExportBlock .microExport .close a {background:#ffffff url(/images/icons/sprite_export_votes.png) -19px -4px no-repeat; width: 7px; height: 7px; overflow: hidden; display: block;}
+.microExportBlock .microExport .list {width: 112px; height: 24px; overflow: hidden;  padding:10px 0; display:none;}
+.microExportBlock .microExport .list .item {width: 24px; height: 24px; float: left; padding-right: 4px}
+.microExportBlock .microExport .list .item * {background: url(/images/movies/vote_export.gif); width: 24px; height: 24px; display: block}
+.microExportBlock .microExport .list .fb a {background-position: 0 -25px}
+.microExportBlock .microExport .list .tw a {background-position: -25px -25px}
+.microExportBlock .microExport .list .vk a {background-position: -50px -25px}
+.microExportBlock .microExport .list .lj a {background-position: -75px -25px}
+.microExportBlock .microExport .list .fb_off a {background-position: 0 0}
+.microExportBlock .microExport .list .tw_off a {background-position: -25px 0}
+.microExportBlock .microExport .list .vk_off a {background-position: -50px 0}
+.microExportBlock .microExport .list .lj_off a {background-position: -75px 0}
+.microExportBlock .microExport .add_micro_share {border-top:1px solid #cccccc; font-size:12px; color:#333333; font-family: Tahoma; text-align:center; background-color:#e3e3e3; padding:5px !important; text-transform: uppercase; border-radius: 1px; -webkit-border-radius: 1px; -moz-border-radius: 1px; width:175px; display:none; text-transform: uppercase; text-decoration:none !important; border-bottom:none; border-right:none; margin-left:-10px !important;}
+.microExportBlock .microExport .text_micro_limit {width:168px;font-family: Arial;font-size:11px;color:#999999;margin: 5px 0 0 -10px !important;border-top:1px solid #cccccc;border-right:1px solid #ffffff;border-left:1px solid #ffffff;border-bottom:none;padding:5px 5px 5px 9px !important;height:15px;cursor:pointer;overflow:hidden;}
+.microExport.open_mess_micro .text_micro_limit {color:#333333;border-bottom:1px solid #cccccc;height:44px;cursor:default; padding-bottom:20px !important;}
+.microExportBlock .microExport .text_mchars_limit{position:absolute;font-family:Arial;font-size:10px;color:#006600;margin-top:-20px;right:5px;display:none;}
+.microExportBlock .microExport.open_mess_micro .list,
+.microExportBlock .microExport.open_mess_micro .add_micro_share,
+.microExportBlock.hide .showMicroBlog,
+.microExportBlock .microExport.open_mess_micro .text_mchars_limit{display:block;}
+.microExportBlock .itemsFriend .item{ padding:10px; background:#ffffff; width:165px; margin-top:5px; position:relative; box-shadow: 1px 1px 2px #cccccc; -webkit-box-shadow: 1px 1px 2px #cccccc;-moz-box-shadow: -1px 1px 2px #cccccc;}
+.microExportBlock .itemsFriend .item .userPic{width:24px; height:24px; position:absolute; left:10px;}
+.microExportBlock .itemsFriend .item a{margin:-3px 0 0 33px; padding:0px;font-size:11px; color:#000055; display:block; font-weight:bold; width:100px; overflow:hidden; white-space: nowrap; position:relative;}
+.microExportBlock .itemsFriend .item:after {content:""; position:absolute; top:0px; right:40px; width:15px; height:35px;background-image:-moz-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));background-image:-webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));background-image:-o-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));background-image:-ms-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));background-image:linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1))}
+.microExportBlock .itemsFriend .item img{width:24px; height:24px; background-size: cover !important;}
+.microExportBlock .itemsFriend .item span{margin:0px 0 0 33px; padding:0px; font-size:11px; color:#999999; display:inline-block; width:100px; overflow:hidden; white-space: nowrap;}
+.microExportBlock .itemsFriend .item p{font-family: Arial; margin:8px 0 0 0; padding:0px; line-height:17px; font-size:11px; color:#333333}
+.microExportBlock .votesRound{position:absolute; top:6px; right:10px;}
+.microExport.notAuthorized p {background-color:#ffffff; margin:9px 0 0 -10px; padding:7px 15px 10px 10px; line-height:17px; font-size:11px; color:#333333; border-top:1px solid #cccccc; width:160px;}
+.microExport.notAuthorized a {line-height:17px; font-size:11px; color:#333333}
+.sinopsysNone {margin:20px; color:#333333; font-size:12px;}
+.sinopsysNone  img {margin:0 0px 0 15px; display:inline-block;}
+.sinopsysNone #add_sinopsys {color:#777777; font-size:11px; text-decoration:underline;}
+.sinopsys_closers { background: url("/images/movies/pls_mns.png") repeat scroll 0 0 transparent;display: block;height: 11px;
+    overflow: hidden;position: absolute;width: 11px; margin: 3px 0px 0px -15px;}
+.sinopsys_closers span {display:none;}
+.sinopsys_open{background: url("/images/movies/pls_mns.png") no-repeat scroll 0 -16px transparent; width:100%;}
+.sinopsys_open span{color: #333333;font-size: 11px;font-weight: bold;margin:-3px 0 0 0;padding-left: 15px;text-decoration: underline; display:block;font-family: tahoma;}
+.contentBlock1 .brand_words  {position:relative;}
+.brand_words span.Adderror {display:none; position:relative; right:0px; color:#777777 !important; font-size:11px!important;}
+.brand_words #AdderrorL {color:#777777 !important; font-size:11px!important; text-decoration:underline;}
+#KPLightBox.addSinopsys {}
+#KPLightBox.addSinopsys form {margin-top:-20px;}
+#KPLightBox.addSinopsys label{display:block;font-size:12px;color:#666666; margin-bottom:5px;}
+#KPLightBox.addSinopsys input{height:21px;width:425px;border:1px solid #c5c5c5;padding-left:4px}
+#KPLightBox.addSinopsys textarea{font-family:arial; font-size:12px; height:169px;width:425px;border:1px solid #c5c5c5;padding:3px 0 3px 4px;}
+#KPLightBox.addSinopsys .nice_button[disabled]{cursor:default;opacity:.5;filter:alpha(opacity=50)}
+#KPLightBox.addSinopsys .nice_button{width:160px !important;height:26px !important;border:1px #fff outset !important;font-weight:bold;}
+.contentBlock1 .tdSinopsys {padding: 10px 10px 15px 20px;}
+.contentBlock1 .tdSinopsys:hover span.Adderror {display:inline-block;}
+/* Цитаты */
+#quotesPageFilm{padding-bottom:50px}
+#quotesPageFilm blockquote{border-bottom:1px dotted #ccc;font:italic normal 13px/25px Georgia,serif;color:#333;padding:15px 30px 15px 0;margin:0 0 0 50px;text-shadow:0 0 1px #fff; position:relative;}
+#quotesPageFilm blockquote:before{position:absolute;margin:15px 0 0 -35px;font:normal normal 60px/25px Georgia,serif;color:#bfbfbf}
+#quotesPageFilm blockquote p{padding:5px 0 0 0;margin:0}
+#quotesPageFilm h4{border-bottom:1px dotted #ccc;font:normal normal 11px/25px Arial,serif;color:#999;padding:0 0 7px 23px;margin:-12px 0 0 0}
+#quotesPageFilm blockquote ul{list-style:none inside;margin:0;padding:5px 0 0 20px}
+#quotesPageFilm blockquote ul.quoteslist li:before{margin-left:-3ex;margin-right:1ex}
+#quotesPageFilm blockquote .hoverBlockquote{font:normal normal 11px/15px Tahoma,serif;color:#999;position:relative;margin-top:7px}
+#quotesPageFilm blockquote .hoverBlockquote a{font:normal normal 11px/15px Tahoma,serif;color:#999;text-decoration:underline}
+#quotesPageFilm blockquote .hoverBlockquote a:hover{text-decoration:none}
+#quotesPageFilm blockquote .hoverBlockquote .questionnaire{position:absolute;right:-30px;display:none}
+#quotesPageFilm blockquote .hoverBlockquoteYes .questionnaire{display:inline !important}
+#quotesPageFilm blockquote .hoverBlockquote .questionnaire .addComplaint{padding:0 25px;position:relative}
+#quotesPageFilm blockquote .hoverBlockquote .questionnaire .addComplaint span{background:url("/images/icons/sprite_blockquote.png") repeat scroll -13px 0 transparent;position:absolute;opacity:.8;display:block;width:21px;height:15px;top:0;left:0}
+#quotesPageFilm blockquote .hoverBlockquote .questionnaire .yesRemember{padding-left:15px}
+#quotesPageFilm blockquote .hoverBlockquote .questionnaire .noRemember{padding-right:10px}
+#quotesPageFilm blockquote .profilName span{background:url("/images/icons/sprite_blockquote.png") repeat scroll 0 0 transparent;position:absolute;display:block;width:15px;height:15px;top:0;left:0}
+#quotesPageFilm blockquote .hoverBlockquote .profilName{opacity:.8;text-decoration:none;padding-left:20px;position:relative}
+#quotesPageFilm blockquote .hoverBlockquoteYes .profilName{opacity:1 !important}
+#addbBockquote{font:normal normal 11px/15px Tahoma,serif;color:#666666;position:absolute;right:10px; text-decoration:underline;}
+#addbBockquote span{background:url("/images/icons/sprite_blockquote.png") repeat scroll -37px -2px transparent;color:#999;display:block;font:11px/25px Tahoma,serif;height:7px;margin:9px 0 0 -10px;position:absolute;width:7px}
+.popupQuotes{background:url("/images/spacer.gif") repeat scroll 0 0 transparent;border-collapse:collapse;height:100%;display:none;left:0;position:fixed;top:0;width:100%;z-index:1150 !important}
+.popupQuotes .block{background:url("/images/popupNewBottom.gif") repeat-x scroll 0 100% #fff;box-shadow:0 5px 50px #333;margin:0 auto;min-height:1px;padding:18px 27px 27px;position:relative;width:326px}
+.popupQuotes .title{font-size:15px;font-weight:bold;margin:5px 0 13px}
+.popupQuotes .close{background:url("/images/close45.gif") repeat scroll 0 0 transparent;cursor:pointer;height:14px;position:absolute;right:24px;top:21px;width:14px}
+.popupQuotes .reportQuotesbutton{margin-top:12px}
+.popupQuotes .reportQuotesnotice{width:320px;height:90px;font-family:tahoma,verdana,arial;font-size:12px;color:#333}
+.addToShare{margin:-3px 0 0 -26px !important;padding:0;position:relative;list-style:none !important}
+.addToShare li{border:1px solid #dadada;float:left;height:16px;margin-left:6px;padding:1px;width:16px; list-style:none !important}
+.addToShare li *{background:url("/images/addTo.gif") repeat scroll 0 0 transparent;cursor:pointer;display:block;height:16px;overflow:hidden;width:16px}
+.addToShare .icon{border:0;width:20px;height:20px;margin-top:-1px}
+.addToShare .icon *{background:url("/images/icons/sprite_trivi.png") repeat scroll 86px 0 transparent;width:20px;height:20px}
+.addToShare .lj *{background-position:0 0}
+.addToShare .vk *{background-position:-17px 0}
+.addToShare .fb *{background-position:-34px 0}
+.addToShare .tw *{background-position:-51px 0}
+.addToShare li:hover{opacity:1}
+.link_edit_share_box{display:none;padding-left:22px;left:520px;top:5px;position:absolute;z-index:999;height:100%;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;transition:all .3s ease-in-out;white-space:nowrap;min-width:118px}
+.link_edit_share{display:block;height:auto;background-color:#fff;box-shadow:0 1px 3px #404040;-webkit-box-shadow:0 1px 3px #404040;-moz-box-shadow:0 1px 3px #404040;padding:10px}
+#quotesPageFilm blockquote:hover .link_edit_share_box, .link_edit_share_box:hover{display:block;}
+.link_edit_share_box .triangle{background:url("/images/icons/triangle.png") repeat scroll 0 0 transparent;display:block;height:14px;left:14px;position:absolute;top:14px;width:8px}
+/* Разворачивание td в таблице info */
+.slideInfoTD__fullTime {padding:9px 0px 6px 0px; margin-top:9px; background: url("/images/movies/dotbgtable.png") repeat-x scroll left top rgba(0, 0, 0, 0);border-left: 20px solid #f2f2f2;position:relative; left:-20px; width:100%;}
+.slideInfoTD__all {padding:7px 0px 4px 0px; margin-top:9px; background: url("/images/movies/dotbgtable.png") repeat-x scroll left top rgba(0, 0, 0, 0);border-left: 20px solid #f2f2f2;position:relative; left:-20px; width:100%;}
+.trigShow {display:none;}
+.slideInfoTD {background: none !important; position:relative;}
+.slideInfoTD i{background: url("/images/movies/pls_mns.png") no-repeat scroll 0 -16px;display: block;height: 11px;overflow: hidden;position: absolute;width: 11px; cursor:pointer; margin:3px 0px 0px -23px}
+.slideInfoOpen .flag {margin:0px 10px 0 0px;}
+.slideInfoOpen .slideInfoTD i {background-position: 0 0px;}
+.slideInfoOpen .trigShow {display:inline-block;}
+h4.preview_title {font-size: 14px; font-weight: bold; padding:0px;margin:0px; min-height: 16px;width:550px; overflow:hidden;}
+.preview_textWrap {width:550px; overflow:hidden;margin-bottom:20px;}
+#trailerinfo td {vertical-align: top;}
+.online_button {margin: 20px 0 20px 15px;}
+.online_button_icheck {margin-left: 0;}

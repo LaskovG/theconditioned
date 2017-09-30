@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["\/rMJs"]); }
+
+__d("PixelRatioConst",[],(function a(b,c,d,e,f,g){f.exports={cookieName:"dpr"}}),null);
+__d('WebPixelRatio',['Cookie','DOMEventListener','PixelRatioConst','Run'],(function a(b,c,d,e,f,g){var h=c('PixelRatioConst').cookieName,i=void 0,j=false,k=false;function l(){return window.devicePixelRatio||1}function m(){c('Cookie').set(h,String(l()))}function n(){c('Cookie').clear(h)}function o(){if(k)return;k=true;var q=l();if(q!==i){m()}else n();}var p={startDetecting:function q(r){i=r||1;n();if(j)return;j=true;if('onpagehide' in window)c('DOMEventListener').add(window,'pagehide',o);c('Run').onBeforeUnload(o,false)},get:function q(){return i||l()}};f.exports=p}),null);

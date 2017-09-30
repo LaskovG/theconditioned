@@ -1,0 +1,105 @@
+.block_add {background: url(/images/movies/block_add_bg.jpg); width: 102px; min-height: 46px; position: relative; margin-bottom: 33px; padding: 10px 5px 0 23px}
+.block_add * {list-style: none; margin: 0; padding: 0;}
+   .block_add .status {background: url(/images/movies/block_add_status.png); width: 36px; height: 36px; overflow: hidden; position: absolute; top: 10px; left: -17px}
+   .block_add .info {position: absolute; top: 3px; right: 5px}
+   .block_add .info a {background: url(/images/movies/info.gif); width: 14px; height: 14px; overflow: hidden; display: block}
+   .block_add .header {color: #555}
+   .block_add .select {min-height: 22px; position: relative; z-index: 10; margin: 2px 0 0 -2px}
+      .block_add .select .title {background: #e4e4e3 url(/images/movies/select.gif?v=20110701) 100% 0; width: 96px; height: 17px; color: #333; font-weight: bold; border: 1px #999 solid; border-top: none; border-right: none; cursor: pointer; display: block; padding: 4px 0 0 6px}
+      .block_add .select .title b {display: none}
+      .block_add .select .list_title {background: url(/images/movies/select.gif?v=20110701) -216px -151px; width: 208px; height: 17px; color: #fff; font-weight: bold; cursor: pointer; position: absolute; top: 0; left: 0; padding: 4px 0 0 7px}
+      .block_add .select .list {background: #fff url(/images/movies/select.gif?v=20110701); width: 215px; border-bottom: 2px #999 solid; position: absolute; top: 21px; left: 0; padding: 5px 0}
+      .block_add .select .list dd {background: url(/images/movies/select.gif?v=20110701) -216px -23px; height: 17px; color: #333; cursor: pointer; position: relative; padding: 3px 0 0 41px}
+      .block_add .select .list s {background: url(/images/movies/select.gif?v=20110701); width: 13px; height: 11px; overflow: hidden; display: block; position: absolute; top: 4px; left: 21px}
+      .block_add .select .list .public-folder s {background-position: -242px -107px}
+      .block_add .select .list .private-folder s {background-position: -256px -107px}
+      .block_add .select .list .fav s {background: url(/images/temporary/iconsfoldersprite.png) no-repeat 0 -27px; width: 15px; height: 13px}
+      .block_add .select .list .favGray s {background: url(/images/temporary/iconsfoldersprite.png) no-repeat 0 -39px; width: 15px; height: 13px}
+      .block_add .select .list .act {background-position: -216px -65px}
+      .block_add .select .list .slc {background-position: -216px -44px; font-weight: bold}
+      .block_add .select .list .act_slc {background-position: -216px -86px; font-weight: bold}
+      .block_add .select .list .arrow {width: 25px; height: 20px; overflow: hidden; position: absolute; top: 0; left: 189px}
+      .block_add .select .list .arrow:hover {background: url(/images/movies/select.gif?v=20110701) -216px -107px}
+   .block_add .loader {background: url(/images/loaders/333_f2f2f2.gif); width: 16px; height: 16px; position: absolute; top: 3px; left: -23px}
+
+   .block_add .folders {color: #777; display: none; padding: 8px 0 13px 0}
+      .block_add .folders li {display: inline}
+	  .block_add .folders li.noact_s {display: none}
+	  .block_add .folders s {display: none;text-decoration:none;}
+      .block_add .folders a {color: #777; text-decoration: underline}
+      .block_add .folders a:hover {text-decoration: none}
+   .block_add .all {width: 130px; font-size: 10px; text-decoration: none; text-align: right; position: absolute; bottom: -13px; right: 0}
+      .block_add .all a {color: #777; text-decoration: underline}
+      .block_add .all a:hover {text-decoration: none}
+.block_added {background-position: -131px 0; background-repeat: repeat-y}
+   .block_added .folders {display: block}
+   .block_added .status {background-position: -37px 0}
+   .block_added .info {display: none}
+
+
+.MyKP_Folder_Select {width: 110px; font-family: tahoma, verdana; font-size: 11px}
+.MyKP_Folder_Select * {list-style: none; margin: 0; padding: 0}
+   .MyKP_Folder_Select .select {min-height: 22px; position: relative; margin-left: 35px}
+      .MyKP_Folder_Select .select .title {background: #e4e4e3 url(/images/movies/select.gif?v=20110701) 100% 0; width: 122px; height: 17px; color: #333; font-family: tahoma, verdana; border: 1px #999 solid; border-top: none; border-right: none; cursor: pointer; display: block; padding: 4px 0 0 6px}
+      .MyKP_Folder_Select .select .title b {font-weight: normal}
+      .MyKP_Folder_Select .select .list_title {background: url(/images/movies/select.gif?v=20110701) -216px -151px; width: 208px; height: 17px; color: #fff; font-weight: bold; cursor: pointer; position: absolute; top: 0; left: 0; padding: 4px 0 0 7px}
+      .MyKP_Folder_Select .select .list {background: #fff url(/images/movies/select.gif?v=20110701); width: 215px; border-bottom: 2px #999 solid; position: absolute; top: 21px; left: 0; z-index: 100; padding: 5px 0}
+      .MyKP_Folder_Select .select .list dd {background: url(/images/movies/select.gif?v=20110701) -216px -23px; height: 17px; color: #333; cursor: pointer; position: relative; padding: 3px 0 0 41px}
+      .MyKP_Folder_Select .select .list s {background: url(/images/movies/select.gif?v=20110701); width: 13px; height: 11px; overflow: hidden; display: block; position: absolute; top: 4px; left: 21px}
+      .MyKP_Folder_Select .select .list .public-folder s {background-position: -242px -107px}
+      .MyKP_Folder_Select .select .list .private-folder s {background-position: -256px -107px}
+      .MyKP_Folder_Select .select .list .fav s {background: url(/images/temporary/iconsfoldersprite.png) no-repeat 0 -27px; width: 15px; height: 13px}
+      .MyKP_Folder_Select .select .list .favGray s {background: url(/images/temporary/iconsfoldersprite.png) no-repeat 0 -39px; width: 15px; height: 13px}
+      .MyKP_Folder_Select .select .list .act {background-position: -216px -65px; /*color: #fff*/}
+      .MyKP_Folder_Select .select .list .slc {background-position: -216px -44px; font-weight: bold}
+      .MyKP_Folder_Select .select .list .act_slc {background-position: -216px -86px; /*color: #fff;*/ font-weight: bold}
+      .MyKP_Folder_Select .select .list .arrow {width: 25px; height: 20px; overflow: hidden; position: absolute; top: 0; left: 189px}
+      .MyKP_Folder_Select .select .list .arrow:hover {background: url(/images/movies/select.gif?v=20110701) -216px -107px}
+   .MyKP_Folder_Select .loader {background: url(/images/loaders/333_f2f2f2.gif); width: 16px; height: 16px; position: absolute; top: 3px; left: -23px}
+
+
+
+   .shortselect {position: absolute; margin: 47px 0 0 2px}
+   .shortselect .select {margin: 0 !important}
+   .shortselect .title {width: 98px !important}
+   .shortselect .title b{display: none}
+   .shortselect .MyKP_Folder_Select_dot {display: none}
+   .MyKP_Folder_Select_added .title {background-position: 100% -174px !important; font-weight: bold}
+   .MyKP_Folder_Select_added .MyKP_Folder_Select_dot {background: url(/images/movies/select.gif?v=20110701) -270px -107px; width: 7px; height: 7px; overflow: hidden; display: block; position: absolute; margin: -14px 0 0 -14px}
+
+   .block_add.extended {background:none; padding:0; width:130px;}
+	.block_add.extended .select {margin-top: 0; margin-left: 0}
+	.block_add.extended .select .title {background: #e4e4e3 url(/images/selectboxWidget.gif?2);width: 21px; height: 20px; border: 1px #999 solid; float: left; position: relative; padding: 0}
+	.block_add.extended .select .button { border:solid 1px #999; float:left; width:94px; padding-left:10px; background: #e4e4e3 url("/images/selectboxWidget.gif?2") repeat 0 0 ;  height: 17px; color: #333; font-weight: bold; border-right:none; border-left:none; cursor: pointer; display: block; padding: 3px 0 0 13px; overflow:hidden; white-space: nowrap;}
+
+	.block_add.extended .select .button:hover {background: #dcdcdc url("/images/selectboxWidget.gif?2") 0 20px ;}
+	.block_add.extended .select .title:hover {background: #dcdcdc url("/images/selectboxWidget.gif?2") 0 20px ;}
+
+	.block_add.extended .select .button.active {background: #6d84b4; border-color: #3b5998; height:18px; border-right-color: #6d84b4; border-bottom: none; color:#fff;}
+
+
+	.block_add.extended .select .title.active, .block_add.extended .select .title.loading {background: #6d84b4; width: 22px; height: 21px; color: #fff; border-color: #3b5998; border-bottom: none; border-right: none}
+	.block_add.extended .select .title.active .icon,.block_add.extended .select .title.loading .icon {background-position: -26px -31px;}
+
+	.block_add.extended .select .button b {opacity: 1 !important; display: block; overflow: hidden; width: 93px;}
+	.block_add.extended .select .button:hover b {}
+	.block_add.extended .select .button:hover .icon, .block_add.extended .select .button:hover b, .block_add.extended .select .title:hover .icon {opacity: 0.7; filter: alpha(opacity=70)}
+	.block_add.extended .select .button.active:hover * {color:#ddd !important;}
+	.block_add.extended .select .button .icon {background: url(/images/selectboxWidget.gif?2) -26px -21px; width: 6px; height: 7px; overflow: hidden; position: absolute; top: 9px; left: 4px}
+	.block_add.extended .select .button.active .icon {background-position: -25px -38px;}
+	.block_add.extended .select .button.loading {background: #6d84b4; border-color: #3b5998; height:18px; border-right-color: #6d84b4; border-bottom: none; color:#fff; }
+	.block_add.extended .select .button.loading .icon {background: url("/images/selectboxWidgetLoader.gif"); height: 11px; left: 45px; overflow: hidden; position: absolute;  top: 5px; width: 16px;}
+    .list_title_loading {background: url("/images/selectboxWidgetLoader.gif") no-repeat; height: 11px; left: 150px; overflow: hidden; position: absolute;  top: 5px; width: 16px; display:block; z-index:9;}
+	.block_add.extended .select .button.loading b {display:none;}
+	.block_add.extended .select .title .icon {background: url(/images/selectboxWidget.gif?2) -16px -31px; width: 9px; height: 6px; overflow: hidden; position: absolute; top: 8px; left: 6px}
+ .block_add.extended .allFolders {min-height: 1px; color: #777; font-size: 10px; position: relative; margin-top: 9px; padding-left: 14px}
+	.block_add.extended .allFolders .dot {background: #777; width: 2px; height: 2px; overflow: hidden; position: absolute; top: 6px; left: 7px}
+	.block_add.extended .allFolders .text a {color: #777}
+	.block_add.extended .allFolders .text a:hover {text-decoration: underline}
+	.block_add.extended .allFolders .info {background: url(/images/selectboxWidget.gif?2) -16px -21px; width: 9px; height: 9px; cursor: pointer; overflow: hidden; position: absolute; top: 2px; right: 7px}
+	.block_add.extended .allFolders .info:hover {opacity: 0.6; filter: alpha(opacity=6)}
+	.block_add.extended .folders {background: #e3e3e3; border-top: 1px #f2f2f2 solid; padding: 8px 5px 12px 14px}
+	.block_added.extended .info {display: block}
+ .MyKP_Folder_Select_Single  .mymovies_preloader {width:130px; height:23px; background: url(/images/loaders/selectboxWidgetLoaderBlue.gif) center center no-repeat;}
+
+ .MyKP_Folder_Select_stars {margin-top:8px;}

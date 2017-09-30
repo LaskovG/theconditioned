@@ -1,0 +1,138 @@
+/* 25.06.2013  11:30 */
+    .vote_export_block {position: absolute; z-index: 1001;}
+    .vote_export {background:#ffffff !important; width: 218px !important; position: absolute; top: 8px; left: 0; border-top:3px solid #ff7519; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-bottom:1px solid #cccccc; position:relative;}
+    .open_mess_share {padding-bottom:22px !important;}
+    .active {background: url(/images/movies/vote_export_bg2.png)}
+       .vote_export .title {color: #666666; font-size: 11px; display: block; margin:5px 0px 5px 8px; font-weight:bold; font-family: Tahoma;}
+       .vote_export .list {width: 112px; height: 24px; overflow: hidden; margin-left:8px; padding-bottom:15px;}
+       .vote_export .list .item {width: 24px; height: 24px; float: left; padding-right: 4px; min-height:24px;}
+       .vote_export .list .item * {background: url(/images/movies/vote_export.gif); width: 24px; height: 24px; display: block}
+          .vote_export .list .fb a {background-position: 0 -25px}
+          .vote_export .list .tw a {background-position: -25px -25px}
+          .vote_export .list .vk a {background-position: -50px -25px}
+          .vote_export .list .lj a {background-position: -75px -25px}
+          .vote_export .list .fb_off a {background-position: 0 0}
+          .vote_export .list .tw_off a {background-position: -25px 0}
+          .vote_export .list .vk_off a {background-position: -50px 0}
+          .vote_export .list .lj_off a {background-position: -75px 0}
+       .vote_export .close {position: absolute; top: 10px !important; right: 10px !important;}
+       .vote_export .close a {background:#ffffff url(/images/icons/sprite_export_votes.png) -19px -4px no-repeat; width: 7px; height: 7px; overflow: hidden; display: block;}
+       .starbar_w {background: url(/images/starz.gif) 0 -62px no-repeat; height: 30px; position: absolute}
+       .starbar .user {background-position: 0 -31px}
+       .active .starbar_w {background: url(/images/starz.gif) 0 -187px no-repeat; height: 30px; position: absolute}
+       .active .starbar .user {background-position: 0 -156px}
+       .outerOver {background-position: 0 -62px !important;}
+       .active  .outerOver {background-position: 0 -187px !important;}
+       .active_f  .outerOver {background-position: 0 -312px !important;}
+       .rating_hidden {left: auto; top: auto; z-index: 20; margin-left: 260px !important; margin-top:0px !important}
+       .block1 {position: inherit}
+       .block1 {vote_export_block: none}
+       .rating_hidden_a {left: auto; top: auto; z-index: 20; margin-left: 340px !important; margin-top: 30px !important}
+       #btn_rating_close {top: auto; margin-top: 2px; left: 5px}
+       #btn_rating_open_pls {top: auto; margin-top: 2px; left: 5px}
+       /*.text_share_limit, .text_chars_limit {display:none !important;}*/
+       #my_vote_block {color: #999}
+       #my_vote_text {color: #f60}
+       .settings_share {background:url(/images/icons/sprite_export_votes.png) -29px 0px no-repeat; position: absolute; top: 28px; left: 120px; display:block;
+       height:15px; width:15px;}
+       .add_votes_share {border-top:none; border-right:1px solid #cccccc; border-left:1px solid #cccccc; border-bottom:1px solid #999999; font-size:10px; color:#333333; font-family: Tahoma; text-align:center; background-color:#ebebeb; padding:5px !important; text-transform: uppercase; border-radius: 1px; -webkit-border-radius: 1px; -moz-border-radius: 1px; position:absolute; width:208px; margin-left:-1px !important; display:none;}
+       .open_mess_share .add_votes_share {display:block;}
+       .add_votes_share span{width:216px; height:1px; background: #ffffff; position:absolute; display:block; top:0px; margin-left:-4px !important;}
+       .add_votes_share i{font-style:normal;}
+       .add_votes_share:hover {color:#333333;}
+    .starbar {width: 219px; height: 30px}
+    .starbar .outer {background: url(/images/starz.gif) no-repeat; width: 219px; height: 30px; position: absolute}
+    .starbar .in, .starbar .user {background: url(/images/starz.gif) 0 -62px no-repeat; width: 219px; height: 30px; position: absolute}
+    .starbar .user {background-position: 0 -31px}
+    .starbar a {width: 22px; height: 42px; display: block; position: absolute; top: 0; left: 0;}
+    .starbar .opacitystem {background: url("/images/movies/vote_export_bg.png") repeat scroll 0 0 transparent;}
+    .active .opacitystem {background: url("/images/movies/vote_export_bg2.png") repeat scroll 0 0 transparent;}
+    .active_f .opacitystem {background: url("/images/movies/vote_export_bg3.png") repeat scroll 0 0 transparent;}
+    .active .starbar .outer {background-position: 0 -125px}
+    .active .starbar .in, .active .starbar .user {background-position: 0 -187px}
+    .active .starbar .user {background-position: 0 -156px}
+    .active_f td {background: #e5e5ef}
+    .active_f .starbar_w {background: url("/images/icons/starz2.gif") no-repeat scroll 0 -312px transparent;}
+    .active_f .starbar .outer {background: url("/images/icons/starz2.gif") no-repeat scroll 0 0 transparent;}
+    .active_f .starbar .outer {background-position: 0 -250px;}
+    .active_f .starbar .user {background-position: 0 -281px;}
+    .starbar a.hoverstars {background:url(/images/icons/sprite_export_votes.png) 3px bottom no-repeat !important;}
+    .starbar a.hoverstarsH {height:35px !important;}
+    .starbar a.hoverstarsH.hoverstars {background-image:none !important;}
+    .starbar a.s1  {left: 0px}
+    .starbar a.s2  {left: 22px}
+    .starbar a.s3  {left: 44px}
+    .starbar a.s4  {left: 66px}
+    .starbar a.s5  {left: 88px}
+    .starbar a.s6  {left: 110px}
+    .starbar a.s7  {left: 132px}
+    .starbar a.s8  {left: 154px}
+    .starbar a.s9  {left: 176px}
+    .starbar a.s10  {left: 198px}
+    .text_share_limit {
+        width:205px;
+        font-family: Arial;
+        font-size:11px;
+        color:#999999;
+        margin: 5px 0 0 -1px !important;
+        border-top:1px solid #cccccc;
+        border-right:1px solid #cccccc;
+        border-left:1px solid #cccccc;
+        border-bottom:none;
+        padding:5px 5px 5px 8px !important;
+        height:15px;
+        background: transparent;
+        position:relative;
+        cursor:pointer;
+        overflow:hidden;
+    }
+
+    .text_share_limit_bg {
+        width:200px;
+        position:absolute;
+        font-family: Arial;
+        font-size:11px;
+        color:#fff;
+        margin: 6px 0 0 0px !important;
+        padding:5px 5px 5px 8px !important;
+        cursor:pointer;
+        overflow:hidden;
+        word-wrap:  break-word;
+    }
+    .text_share_limit_bg span{
+        color:#999; margin-left:5px;
+    }
+
+    .open_mess_share .text_share_limit {
+        width:205px;
+        font-family: Arial;
+        font-size:11px;
+        color:#333333;
+        margin: 5px 0 0 -1px;
+        border-top:1px solid #cccccc;
+        border-right:1px solid #cccccc;
+        border-left:1px solid #cccccc;
+        border-bottom:1px solid #999999;
+        height:60px;
+        padding:5px 5px 5px 8px;
+        cursor:default;
+    }
+    .text_chars_limit {
+        position:absolute;
+        font-family: Arial;
+        font-size:10px;
+        color:#009900;
+        margin-top:-20px;
+        right:5px;
+        display:none;
+    }
+
+    .open_mess_share .text_chars_limit {
+        position:absolute;
+        font-family: Arial;
+        font-size:10px;
+        color:#009900;
+        margin-top:-20px;
+        right:5px;
+        display:block;
+    }
